@@ -17,9 +17,9 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/address": "^1.8",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.9",
+        "drupal/core-composer-scaffold": "^9.0.0",
+        "drupal/core-project-message": "^9.0.0",
+        "drupal/core-recommended": "^9.0.0",
         "drupal/diff": "^1.0",
         "drupal/paragraphs": "^1.10",
         "drush/drush": "9.*"
