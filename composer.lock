@@ -7048,16 +7048,16 @@
         },
         {
             "name": "steinmb/elmcip_person",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/steinmb/elmcip_person.git",
-                "reference": "6464686e1ddd5cd64b715e7d94bef3a85914b73c"
+                "reference": "9236932661470a52621c688c4edf2822c1589677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/steinmb/elmcip_person/zipball/6464686e1ddd5cd64b715e7d94bef3a85914b73c",
-                "reference": "6464686e1ddd5cd64b715e7d94bef3a85914b73c",
+                "url": "https://api.github.com/repos/steinmb/elmcip_person/zipball/9236932661470a52621c688c4edf2822c1589677",
+                "reference": "9236932661470a52621c688c4edf2822c1589677",
                 "shasum": ""
             },
             "require": {
@@ -7070,10 +7070,10 @@
             "description": "Provides ELMCIP Person functionality validating and hiding node title.",
             "homepage": "https://github.org/steinmb/elmcip_person",
             "support": {
-                "source": "https://github.com/steinmb/elmcip_person/tree/1.0",
+                "source": "https://github.com/steinmb/elmcip_person/tree/1.1",
                 "issues": "https://github.com/steinmb/elmcip_person/issues"
             },
-            "time": "2020-09-02T12:45:20+00:00"
+            "time": "2020-09-03T17:45:38+00:00"
         },
         {
             "name": "symfony-cmf/routing",
