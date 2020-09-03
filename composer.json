@@ -12,19 +12,33 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/steinmb/elmcip_person"
         }
     ],
     "require": {
         "composer/installers": "^1.2",
         "drupal/address": "^1.8",
         "drupal/core-composer-scaffold": "^9.0.0",
+        "drupal/core-dev": "^9.0",
         "drupal/core-project-message": "^9.0.0",
         "drupal/core-recommended": "^9.0.0",
         "drupal/diff": "^1.0",
+        "drupal/facets": "^1.4",
+        "drupal/inline_entity_form": "^1.0",
+        "drupal/olivero": "1.x-dev",
         "drupal/paragraphs": "^1.10",
-        "drush/drush": "9.*"
+        "drupal/pathauto": "^1.8",
+        "drupal/redirect": "^1.6",
+        "drupal/search_api": "^1.17",
+        "drupal/views_data_export": "^1.0",
+        "drush/drush": "^10.2",
+        "steinmb/elmcip_person": "^1.0"
     },
     "require-dev": {
+        "drupal/entity_browser": "^2.5"
     },
     "conflict": {
         "drupal/drupal": "*"
