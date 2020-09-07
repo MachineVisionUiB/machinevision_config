@@ -1,0 +1,29 @@
+uuid: a9ab0158-f039-4a03-b88e-513c8d81b678
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sexuality
+    - node.type.character
+    - taxonomy.vocabulary.sexuality
+id: node.character.field_sexuality
+field_name: field_sexuality
+entity_type: node
+bundle: character
+label: Sexuality
+description: 'If the character''s sexuality is clearly represented in the work, enter it (Lesbian, Bi-sexual, Gay, etc).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sexuality: sexuality
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

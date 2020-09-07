@@ -1,0 +1,28 @@
+uuid: 51428744-51e1-486d-a18f-1a66beae6d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.science_fiction_
+  module:
+    - facets
+    - system
+  theme:
+    - machinevision
+id: sciencefiction
+theme: machinevision
+region: sidebar
+weight: -5
+provider: null
+plugin: 'facet_block:science_fiction_'
+settings:
+  id: 'facet_block:science_fiction_'
+  label: 'Science fiction?'
+  provider: facets
+  label_display: visible
+  block_id: sciencefiction
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false

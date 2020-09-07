@@ -1,0 +1,113 @@
+uuid: 0c79f9b4-c962-4617-945d-b8cdd0aab62f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_picture
+    - field.field.user.user.field_user_profile
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 33-67
+        components:
+          8ea44bb5-41f6-4ace-89d2-312284840f51:
+            uuid: 8ea44bb5-41f6-4ace-89d2-312284840f51
+            region: first
+            configuration:
+              id: 'field_block:user:user:field_user_picture'
+              label: 'User picture'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: media_thumbnail
+                settings:
+                  image_style: portrait
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          06c94585-c3ba-43fe-805f-afe025123303:
+            uuid: 06c94585-c3ba-43fe-805f-afe025123303
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_profile'
+              label: 'User profile'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          f26092b4-107f-4579-bf3b-d793a40f77e6:
+            uuid: f26092b4-107f-4579-bf3b-d793a40f77e6
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_name'
+              label: 'User name'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_user_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_user_picture:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: first
+  field_user_profile:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: first
+hidden:
+  member_for: true
+  search_api_excerpt: true

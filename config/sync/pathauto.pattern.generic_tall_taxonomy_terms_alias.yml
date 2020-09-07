@@ -1,0 +1,14 @@
+uuid: 911179c0-0237-495d-8f23-d0b142e2e7ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: generic_tall_taxonomy_terms_alias
+label: 'Generic tall taxonomy terms alias'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

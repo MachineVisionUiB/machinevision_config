@@ -1,0 +1,15 @@
+uuid: 7ff7e8ec-42bb-4c53-8bfb-4f33f0a5a75d
+langcode: en
+status: true
+dependencies: {  }
+name: article
+label: Article
+effects:
+  6d89c8c2-5c10-4e72-bc60-626b4873f23c:
+    uuid: 6d89c8c2-5c10-4e72-bc60-626b4873f23c
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: true

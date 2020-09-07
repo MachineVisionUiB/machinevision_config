@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.character.field_media
     - field.field.node.character.field_optional_notes
     - field.field.node.character.field_race_ethnicity
+    - field.field.node.character.field_sexuality
     - field.field.node.character.field_species
     - node.type.character
   module:
@@ -27,7 +28,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 14
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -39,10 +40,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     region: content
   field_comment:
-    weight: 26
+    weight: 18
     settings: {  }
     third_party_settings: {  }
     type: comment_default
@@ -70,11 +71,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     region: content
   field_image:
     type: media_library_widget
-    weight: 9
+    weight: 10
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -88,7 +89,7 @@ content:
     region: content
   field_media:
     type: media_library_widget
-    weight: 10
+    weight: 11
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -109,7 +110,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_sexuality:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
     region: content
   field_species:
     weight: 5
@@ -119,11 +130,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     region: content
   path:
     type: path
-    weight: 17
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -131,21 +142,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 14
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 17
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 15
     region: content
     third_party_settings: {  }
   title:
@@ -158,12 +169,17 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
       match_limit: 10
     region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

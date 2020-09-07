@@ -1,0 +1,28 @@
+uuid: 8dc21e91-422d-4943-8298-cbab8e2f3f73
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sexuality
+  module:
+    - facets
+    - system
+  theme:
+    - machinevision
+id: sexuality
+theme: machinevision
+region: sidebar
+weight: -4
+provider: null
+plugin: 'facet_block:sexuality'
+settings:
+  id: 'facet_block:sexuality'
+  label: Sexuality
+  provider: facets
+  label_display: visible
+  block_id: sexuality
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false

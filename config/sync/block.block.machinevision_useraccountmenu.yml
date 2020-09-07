@@ -1,0 +1,25 @@
+uuid: f87e31dd-3e39-4b4f-b949-4f479dd257e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - machinevision
+id: machinevision_useraccountmenu
+theme: machinevision
+region: secondary_menu
+weight: -3
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

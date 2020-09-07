@@ -1,0 +1,20 @@
+uuid: 16232be0-db1c-4c2c-bc1c-a16973ef3777
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_sexuality
+field_name: field_sexuality
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

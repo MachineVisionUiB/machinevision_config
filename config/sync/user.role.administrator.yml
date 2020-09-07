@@ -1,9 +1,9 @@
-uuid: dec2fe03-9359-421e-8f80-581d89b320aa
+uuid: 52f212b8-e2a3-40a4-bfe8-a22c3ad77ab1
 langcode: en
 status: true
 dependencies: {  }
 id: administrator
-label: administrator
+label: Administrator
 weight: 0
 is_admin: null
 permissions:
@@ -13,14 +13,16 @@ permissions:
   - 'access contextual links'
   - 'access dashboard'
   - 'access private fields'
-  - 'access site reports'
+  - 'access site in maintenance mode'
   - 'access site-wide contact form'
   - 'access toolbar'
   - 'access user profiles'
   - 'add media from remote sources'
   - admin_display_suite
+  - 'administer account settings'
   - 'administer actions'
   - 'administer blocks'
+  - 'administer comment form display'
   - 'administer comments'
   - 'administer contact forms'
   - 'administer content types'
@@ -31,6 +33,7 @@ permissions:
   - 'administer media browser'
   - 'administer menu'
   - 'administer module filter'
+  - 'administer node form display'
   - 'administer nodes'
   - 'administer pathauto'
   - 'administer shortcuts'
@@ -38,6 +41,7 @@ permissions:
   - 'administer taxonomy'
   - 'administer url aliases'
   - 'administer users'
+  - 'administer views'
   - 'assign administrative editor role'
   - 'assign all roles'
   - 'assign contributor role'
@@ -46,6 +50,7 @@ permissions:
   - 'assign supereditor role'
   - 'assign teacher role'
   - 'block IP addresses'
+  - 'cancel account'
   - 'change own username'
   - 'configure flickr'
   - 'create field_editorial_notes'
@@ -82,6 +87,7 @@ permissions:
   - 'delete any teaching_resource content'
   - 'delete any video files'
   - 'delete any work content'
+  - 'delete orphan revisions'
   - 'delete own book content'
   - 'delete own class_group content'
   - 'delete own critical_writing content'
@@ -168,6 +174,7 @@ permissions:
   - 'edit terms in 9'
   - 'notify of path changes'
   - 'revert revisions'
+  - 'select account cancellation method'
   - 'show format selection for file'
   - 'show format selection for node'
   - 'show format selection for taxonomy_term'
@@ -183,6 +190,7 @@ permissions:
   - 'use text format 3'
   - 'use text format basic_text_editor'
   - 'use text format ds_code'
+  - 'use text format full_html'
   - 'use text format html'
   - 'view date repeats'
   - 'view field_editorial_notes'

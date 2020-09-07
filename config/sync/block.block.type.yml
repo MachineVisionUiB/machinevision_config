@@ -1,0 +1,28 @@
+uuid: 3347589d-5d09-4291-8ca0-0f68d4ce144e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - facets
+    - system
+  theme:
+    - machinevision
+id: type
+theme: machinevision
+region: sidebar
+weight: -6
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: Type
+  provider: facets
+  label_display: visible
+  block_id: type
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false

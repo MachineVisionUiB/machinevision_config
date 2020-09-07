@@ -1,0 +1,33 @@
+uuid: 2d81a0df-e1e3-4115-9898-062f3570146d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - machinevision
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: machinevision_page_title
+theme: machinevision
+region: content_above
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      character: character
+      machine_vision_situation: machine_vision_situation
+      person: person
+      platform_software: platform_software
+      work: work
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

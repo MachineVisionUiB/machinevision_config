@@ -1,6 +1,6 @@
 uuid: 3de89c4d-4f80-49c6-88f0-a296138b251a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.character.field_media
     - field.field.node.character.field_optional_notes
     - field.field.node.character.field_race_ethnicity
+    - field.field.node.character.field_sexuality
     - field.field.node.character.field_species
     - node.type.character
   module:
@@ -39,4 +40,5 @@ hidden:
   field_media: true
   field_optional_notes: true
   field_race_ethnicity: true
+  field_sexuality: true
   field_species: true

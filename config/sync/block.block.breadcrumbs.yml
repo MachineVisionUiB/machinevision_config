@@ -1,15 +1,15 @@
-uuid: 5b601333-2542-4c2f-8b5e-d558376c3631
+uuid: 4277e334-54e4-4ea9-806e-58d245784263
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - machinevision
 id: breadcrumbs
-theme: seven
+theme: machinevision
 region: breadcrumb
-weight: -2
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -17,4 +17,8 @@ settings:
   label: Breadcrumbs
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*\r\n"
+    negate: false

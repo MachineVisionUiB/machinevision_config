@@ -1,0 +1,25 @@
+uuid: 784b5ca8-697c-48af-994e-03bfa95b01e0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:branding:a2f622a2-14e5-454d-b81b-2ba416293826'
+  module:
+    - block_content
+  theme:
+    - machinevision
+id: machinevision_machinevisionfunding
+theme: machinevision
+region: footer_bottom
+weight: -4
+provider: null
+plugin: 'block_content:a2f622a2-14e5-454d-b81b-2ba416293826'
+settings:
+  id: 'block_content:a2f622a2-14e5-454d-b81b-2ba416293826'
+  label: 'Machine vision funding'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

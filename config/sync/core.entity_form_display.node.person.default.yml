@@ -39,7 +39,7 @@ content:
     type: string_textfield
     region: content
   field_comment:
-    weight: 16
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: comment_default
@@ -92,13 +92,9 @@ content:
     region: content
   field_record_status:
     weight: 8
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_buttons
     region: content
   field_url:
     weight: 6
@@ -110,25 +106,11 @@ content:
     region: content
   path:
     type: path
-    weight: 14
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 12
-    region: content
-    third_party_settings: {  }
   status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  sticky:
     type: boolean_checkbox
     settings:
       display_label: true
@@ -153,4 +135,11 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

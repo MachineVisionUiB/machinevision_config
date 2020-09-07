@@ -1,0 +1,20 @@
+uuid: 1d60019e-4147-4d37-878b-935ac2576774
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - machinevision
+id: mainpagecontent
+theme: machinevision
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

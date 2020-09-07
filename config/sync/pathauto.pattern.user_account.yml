@@ -1,0 +1,14 @@
+uuid: 97878076-ac04-4831-aeca-65a9aba0108c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_account
+label: 'User account'
+type: 'canonical_entities:user'
+pattern: 'user/[user:display-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

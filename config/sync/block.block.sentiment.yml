@@ -1,0 +1,28 @@
+uuid: 5b4c6297-0220-49e2-9981-bbfee450e48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sentiment
+  module:
+    - facets
+    - system
+  theme:
+    - machinevision
+id: sentiment
+theme: machinevision
+region: sidebar
+weight: -2
+provider: null
+plugin: 'facet_block:sentiment'
+settings:
+  id: 'facet_block:sentiment'
+  label: Sentiment
+  provider: facets
+  label_display: visible
+  block_id: sentiment
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false

@@ -12,7 +12,7 @@ entity_type: paragraph
 bundle: character_actions
 label: 'This character'
 description: 'Type the name of a Character in the work who performs or is the target or viewer of an action relating to the machine vision in the situation. If you have already created the Character node, it will autocomplete. If not, please create the Character node first. '
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

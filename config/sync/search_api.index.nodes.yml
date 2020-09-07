@@ -1,0 +1,156 @@
+uuid: 456366fd-eb84-46c5-a8e6-b4b9eb14ebac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - search_api
+  config:
+    - field.storage.node.field_country
+    - field.storage.node.field_race_ethnicity
+    - field.storage.node.field_science_fiction
+    - field.storage.node.field_sentiment
+    - field.storage.node.field_sexuality
+    - field.storage.node.field_species
+    - field.storage.node.field_year
+    - search_api.server.sql_database
+    - core.entity_view_mode.node.search_index
+id: nodes
+name: Nodes
+description: ''
+read_only: false
+field_settings:
+  field_country:
+    label: Country
+    datasource_id: 'entity:node'
+    property_path: field_country
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_country
+  field_race_ethnicity:
+    label: Race/ethnicity
+    datasource_id: 'entity:node'
+    property_path: field_race_ethnicity
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_race_ethnicity
+  field_science_fiction:
+    label: 'Science fiction?'
+    datasource_id: 'entity:node'
+    property_path: field_science_fiction
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_science_fiction
+  field_sentiment:
+    label: Sentiment
+    datasource_id: 'entity:node'
+    property_path: field_sentiment
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_sentiment
+  field_sexuality:
+    label: Sexuality
+    datasource_id: 'entity:node'
+    property_path: field_sexuality
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_sexuality
+  field_species:
+    label: Species
+    datasource_id: 'entity:node'
+    property_path: field_species
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_species
+  field_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_year
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_year
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          character: search_index
+          machine_vision_situation: search_index
+          person: search_index
+          platform_software: search_index
+          work: search_index
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - landing_page
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - rendered_item
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - rendered_item
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: false
+    fields:
+      - rendered_item
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: sql_database

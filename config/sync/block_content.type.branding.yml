@@ -1,0 +1,8 @@
+uuid: fbba0026-d3f3-4c7c-8209-419c1c943b94
+langcode: en
+status: true
+dependencies: {  }
+id: branding
+label: Branding
+revision: 0
+description: 'Used to display random blocks with generic information. Example footer section'

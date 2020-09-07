@@ -1,0 +1,20 @@
+uuid: 2f061b20-3e39-403a-9e82-e0ca2f985221
+langcode: en
+status: true
+dependencies:
+  theme:
+    - machinevision
+id: tabs
+theme: machinevision
+region: highlighted
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }
