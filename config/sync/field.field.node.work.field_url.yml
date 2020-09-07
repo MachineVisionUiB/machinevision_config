@@ -1,0 +1,23 @@
+uuid: ccf02710-994b-4d85-9fb8-fce24fbbfcc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.work
+  module:
+    - link
+id: node.work.field_url
+field_name: field_url
+entity_type: node
+bundle: work
+label: URL
+description: 'Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

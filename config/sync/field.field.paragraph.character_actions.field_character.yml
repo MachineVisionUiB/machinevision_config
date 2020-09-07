@@ -1,0 +1,28 @@
+uuid: f0ea1a2b-0576-42a6-bde4-75dc6ecec344
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_character
+    - node.type.character
+    - paragraphs.paragraphs_type.character_actions
+id: paragraph.character_actions.field_character
+field_name: field_character
+entity_type: paragraph
+bundle: character_actions
+label: 'This character'
+description: 'Type the name of a Character in the work who performs or is the target or viewer of an action relating to the machine vision in the situation. If you have already created the Character node, it will autocomplete. If not, please create the Character node first. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      character: character
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

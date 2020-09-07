@@ -1,0 +1,20 @@
+uuid: 3f0c0592-66e7-4990-b87d-33929d95b735
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_race_ethnicity
+field_name: field_race_ethnicity
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

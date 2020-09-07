@@ -1,0 +1,19 @@
+uuid: 9720da0d-971a-452a-aff1-75e437536038
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.machine_vision_situation
+id: node.machine_vision_situation.field_notes
+field_name: field_notes
+entity_type: node
+bundle: machine_vision_situation
+label: Notes
+description: 'Please note any questions or thoughts that may be relevant in our future research. If you were uncertain about how to tag any aspect of this situation, please make a note of it here, explaining why it was difficult. This field will only be visible to authenticated users, i.e. people who have user accounts and are logged in. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

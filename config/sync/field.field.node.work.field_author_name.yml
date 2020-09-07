@@ -1,0 +1,28 @@
+uuid: 00919768-bb62-400c-813a-58a80a0c8629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_name
+    - node.type.person
+    - node.type.work
+id: node.work.field_author_name
+field_name: field_author_name
+entity_type: node
+bundle: work
+label: Creator
+description: 'Enter the name of the main creator, e.g. author, artist, collective, director or company. The creator''s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the creator</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

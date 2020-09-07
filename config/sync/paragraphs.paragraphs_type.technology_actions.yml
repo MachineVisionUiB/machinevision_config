@@ -1,0 +1,10 @@
+uuid: 055d42ab-4dc3-4e46-aab4-ab376b8d7a57
+langcode: en
+status: true
+dependencies: {  }
+id: technology_actions
+label: 'Technology Actions'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Technology Actions'
+behavior_plugins: {  }

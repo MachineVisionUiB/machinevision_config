@@ -1,0 +1,21 @@
+uuid: e0359f17-3a13-4ddb-87b0-9b7db4d704f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textfield
+    - node.type.machine_vision_situation
+  module:
+    - text
+id: node.machine_vision_situation.field_textfield
+field_name: field_textfield
+entity_type: node
+bundle: machine_vision_situation
+label: 'Brief description'
+description: 'Please give a 1-2 sentence description of the situation machine vision is used in. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

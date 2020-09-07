@@ -1,0 +1,28 @@
+uuid: 79536404-de54-4f48-9e61-11a5bad62d3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multi_image
+    - media.type.image
+    - node.type.work
+id: node.work.field_multi_image
+field_name: field_multi_image
+entity_type: node
+bundle: work
+label: 'Screen shots'
+description: 'Upload screenshots or other relevant imagery of the work here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

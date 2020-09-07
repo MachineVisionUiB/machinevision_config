@@ -1,0 +1,29 @@
+uuid: 1e69276a-cc4e-49bf-bc13-04748d8d68f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_verbs
+    - paragraphs.paragraphs_type.generic_entity_action
+    - taxonomy.vocabulary.verbs
+id: paragraph.generic_entity_action.field_verbs
+field_name: field_verbs
+entity_type: paragraph
+bundle: generic_entity_action
+label: is/are
+description: 'Type in one or more verbs that describe the action the Entity is taking. Use -ing verbs when the Entity is active, and either write Passive or use passive verbs (ending in -ed) if the Entity is the object or target of the action.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      verbs: verbs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

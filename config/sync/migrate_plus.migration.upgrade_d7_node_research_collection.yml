@@ -1,0 +1,140 @@
+uuid: 51f4e85b-bba5-40e9-a899-f13c55b7c89b
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_research_collection
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Research Collection)'
+source:
+  plugin: d7_node
+  node_type: research_collection
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_research_collection/0/status:
+    -
+      plugin: get
+      source: comment
+  field_collection_contributors:
+    -
+      plugin: get
+      source: field_collection_contributors
+  field_collection_curated_by:
+    -
+      plugin: get
+      source: field_collection_curated_by
+  field_creative_works:
+    -
+      plugin: get
+      source: field_creative_works
+  field_critical_writing:
+    -
+      plugin: get
+      source: field_critical_writing
+  field_events:
+    -
+      plugin: get
+      source: field_events
+  field_media:
+    -
+      plugin: sub_process
+      source: field_media
+      process:
+        target_id: fid
+  field_organizations:
+    -
+      plugin: get
+      source: field_organizations
+  field_people:
+    -
+      plugin: get
+      source: field_people
+  field_publishers:
+    -
+      plugin: get
+      source: field_publishers
+  field_rc_db_archive:
+    -
+      plugin: get
+      source: field_rc_db_archive
+  field_rc_description:
+    0:
+      plugin: get
+      source: field_rc_description
+    media_wysiwyg:
+      plugin: media_wysiwyg_filter
+  field_teaching_resources:
+    -
+      plugin: get
+      source: field_teaching_resources
+  field_collection_platform_ref:
+    -
+      plugin: get
+      source: field_collection_platform_ref
+destination:
+  plugin: 'entity:node'
+  default_bundle: research_collection
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

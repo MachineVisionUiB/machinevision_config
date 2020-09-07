@@ -1,0 +1,20 @@
+uuid: 4bbc2341-754d-4338-a281-b3ca76804d54
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_verbs
+field_name: field_verbs
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

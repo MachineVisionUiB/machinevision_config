@@ -1,0 +1,126 @@
+uuid: f7348554-b1d5-4714-a009-e236a36941a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comments.default
+    - field.field.node.character.field_age
+    - field.field.node.character.field_comment
+    - field.field.node.character.field_customizable
+    - field.field.node.character.field_description
+    - field.field.node.character.field_gender
+    - field.field.node.character.field_image
+    - field.field.node.character.field_individual_or_group
+    - field.field.node.character.field_media
+    - field.field.node.character.field_optional_notes
+    - field.field.node.character.field_race_ethnicity
+    - field.field.node.character.field_species
+    - node.type.character
+  module:
+    - comment
+    - text
+    - user
+id: node.character.default
+targetEntityType: node
+bundle: character
+mode: default
+content:
+  field_age:
+    weight: 7
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_comment:
+    weight: 13
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_customizable:
+    weight: 3
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_gender:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 9
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_individual_or_group:
+    weight: 12
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_optional_notes:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_race_ethnicity:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_species:
+    weight: 6
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 12143518-e13d-41f8-8079-8159a95900f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_middle_name
+    - node.type.person
+id: node.person.field_middle_name
+field_name: field_middle_name
+entity_type: node
+bundle: person
+label: 'Middle name'
+description: 'If applicable, enter the middle name of the person. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

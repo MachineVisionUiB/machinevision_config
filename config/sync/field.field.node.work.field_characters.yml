@@ -1,0 +1,28 @@
+uuid: df85ddb9-55ac-4c1d-bf06-9014003bfe71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_characters
+    - node.type.character
+    - node.type.work
+id: node.work.field_characters
+field_name: field_characters
+entity_type: node
+bundle: work
+label: Characters
+description: 'If the user is a character, type User and select that option in the autocomplete. If you instead want to refer to a fictional character, <a href="https://machine-vision.no/node/add/character">create a node for the character</a>, then return to this form, start typing the character''s name in this field and it will autocomplete and link up.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      character: character
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

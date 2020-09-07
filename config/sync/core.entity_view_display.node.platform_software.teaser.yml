@@ -1,0 +1,32 @@
+uuid: 53bd1692-44e9-4135-8d5e-3a4ee6d95eb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.platform_software.body
+    - field.field.node.platform_software.field_comment
+    - node.type.platform_software
+  module:
+    - text
+    - user
+id: node.platform_software.teaser
+targetEntityType: node
+bundle: platform_software
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_comment: true

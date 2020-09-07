@@ -1,0 +1,29 @@
+uuid: 1e51a482-a0a2-481e-9ef8-b692ecdade0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colours
+    - node.type.machine_vision_situation
+    - taxonomy.vocabulary.colours
+id: node.machine_vision_situation.field_colours
+field_name: field_colours
+entity_type: node
+bundle: machine_vision_situation
+label: Colours
+description: 'If there are dominant colours in the visuals of the piece note them. You can also include colours in literary works, if certain colours are important in the description.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colours: colours
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

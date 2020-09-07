@@ -1,0 +1,23 @@
+uuid: 9b50809a-4a1b-46a0-bce7-82f5e5ed43ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_science_fiction
+    - node.type.work
+id: node.work.field_science_fiction
+field_name: field_science_fiction
+entity_type: node
+bundle: work
+label: 'Science fiction?'
+description: "Works should be labeled as science fiction if:\r\n- they are set in a speculative/imagined future, including the near future\r\n- include imagined technologies that did not exist when the work was created, or speculative uses of current technologies\r\n- dystopias/utopias set in the future should always be labeled as science fiction\r\n- works set in an imagined past should generally not be labeled as science fiction"
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

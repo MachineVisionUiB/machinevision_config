@@ -1,0 +1,18 @@
+uuid: b52711f0-dd11-4d65-a00f-2fc8cb720eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.platform_software
+id: node.platform_software.title
+field_name: title
+entity_type: node
+bundle: platform_software
+label: Platform/Software
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

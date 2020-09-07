@@ -1,0 +1,36 @@
+uuid: de01bdd2-1734-453e-b89f-73d427b2208e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.character_actions.field_character
+    - field.field.paragraph.character_actions.field_verbs
+    - paragraphs.paragraphs_type.character_actions
+id: paragraph.character_actions.default
+targetEntityType: paragraph
+bundle: character_actions
+mode: default
+content:
+  field_character:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_verbs:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+hidden:
+  created: true
+  status: true

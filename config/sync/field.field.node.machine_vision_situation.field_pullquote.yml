@@ -1,0 +1,21 @@
+uuid: 8ecd0fda-746c-4d1b-a58b-235478f75943
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pullquote
+    - node.type.machine_vision_situation
+  module:
+    - text
+id: node.machine_vision_situation.field_pullquote
+field_name: field_pullquote
+entity_type: node
+bundle: machine_vision_situation
+label: 'Pull Quotes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

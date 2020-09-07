@@ -1,0 +1,21 @@
+uuid: 64e2f4f4-455a-4c74-8a09-b746ed836448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.work
+  module:
+    - datetime
+id: node.work.field_year
+field_name: field_year
+entity_type: node
+bundle: work
+label: Year
+description: 'Indicate the year of first publication.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

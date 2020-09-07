@@ -1,0 +1,8 @@
+uuid: b0868e32-fff2-45a6-906e-214ff27209ec
+langcode: en
+status: true
+dependencies: {  }
+name: 'Visual characteristics'
+vid: visual_characteristics
+description: ''
+weight: 0

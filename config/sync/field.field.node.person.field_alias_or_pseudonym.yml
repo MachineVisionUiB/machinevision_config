@@ -1,0 +1,19 @@
+uuid: b47ff5c7-5d8b-4370-81eb-9c6942a04143
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alias_or_pseudonym
+    - node.type.person
+id: node.person.field_alias_or_pseudonym
+field_name: field_alias_or_pseudonym
+entity_type: node
+bundle: person
+label: 'Alias or pseudonym'
+description: 'If the author is also known by another name, write it here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

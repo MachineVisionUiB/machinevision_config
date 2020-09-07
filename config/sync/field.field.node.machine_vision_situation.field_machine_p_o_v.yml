@@ -1,0 +1,23 @@
+uuid: 3c8ce42b-58cf-4d93-98c7-5b97c8cc20e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_machine_p_o_v
+    - node.type.machine_vision_situation
+id: node.machine_vision_situation.field_machine_p_o_v
+field_name: field_machine_p_o_v
+entity_type: node
+bundle: machine_vision_situation
+label: 'Machine P.O.V'
+description: 'Tick this box if the work directly shows us the machine vision''s point of view. For instance, we may see "as though we are a drone" or "through a surveillance camera", or in a novel, we might read a description of what a robot sees focalised through the robot.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Machine P.O.V.'
+  off_label: 'Not machine P.O.V.'
+field_type: boolean

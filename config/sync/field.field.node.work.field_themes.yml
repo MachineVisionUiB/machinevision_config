@@ -1,0 +1,29 @@
+uuid: 6ae3795b-797a-45dc-9f95-66546534b199
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_themes
+    - node.type.work
+    - taxonomy.vocabulary.themes
+id: node.work.field_themes
+field_name: field_themes
+entity_type: node
+bundle: work
+label: Topics
+description: 'What topics or themes are present in the work?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      themes: themes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

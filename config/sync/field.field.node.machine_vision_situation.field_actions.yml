@@ -1,0 +1,35 @@
+uuid: 2a61a1c7-bba6-4055-aa9c-3b7b000281b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actions
+    - node.type.machine_vision_situation
+  module:
+    - entity_reference_revisions
+id: node.machine_vision_situation.field_actions
+field_name: field_actions
+entity_type: node
+bundle: machine_vision_situation
+label: 'Who does what?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      character_actions:
+        weight: 4
+        enabled: false
+      generic_entity_action:
+        weight: 5
+        enabled: false
+      technology_actions:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

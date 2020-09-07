@@ -1,0 +1,8 @@
+uuid: 91d7dd46-966c-4089-89c5-97f882b1ce17
+langcode: en
+status: true
+dependencies: {  }
+name: 'Creative Work Publication Type'
+vid: creative_work_publication_type
+description: 'The type of creative work'
+weight: 0

@@ -1,0 +1,28 @@
+uuid: 01576270-af69-4000-ab2c-c83bacc76e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_asset
+    - media.type.image
+    - node.type.machine_vision_situation
+id: node.machine_vision_situation.field_media_asset
+field_name: field_media_asset
+entity_type: node
+bundle: machine_vision_situation
+label: Multimedia
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

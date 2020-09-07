@@ -1,0 +1,40 @@
+uuid: d67f8b90-ba8d-41a3-84e3-662876e1af23
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.field_alias_or_pseudonym
+    - field.field.node.person.field_comment
+    - field.field.node.person.field_country
+    - field.field.node.person.field_editorial_notes
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_notes
+    - field.field.node.person.field_record_status
+    - field.field.node.person.field_url
+    - node.type.person
+  module:
+    - user
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_alias_or_pseudonym: true
+  field_comment: true
+  field_country: true
+  field_editorial_notes: true
+  field_first_name: true
+  field_last_name: true
+  field_middle_name: true
+  field_notes: true
+  field_record_status: true
+  field_url: true

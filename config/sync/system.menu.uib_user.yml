@@ -1,0 +1,8 @@
+uuid: 3922e4b6-a76b-47b7-8397-f6a05326ec0d
+langcode: en
+status: true
+dependencies: {  }
+id: uib_user
+label: 'UiB user accounts'
+description: null
+locked: false

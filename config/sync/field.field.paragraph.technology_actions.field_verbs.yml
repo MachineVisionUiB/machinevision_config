@@ -1,0 +1,29 @@
+uuid: 1af04e56-9dbc-4e8e-8806-da7612dd6119
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_verbs
+    - paragraphs.paragraphs_type.technology_actions
+    - taxonomy.vocabulary.verbs
+id: paragraph.technology_actions.field_verbs
+field_name: field_verbs
+entity_type: paragraph
+bundle: technology_actions
+label: Is
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      verbs: verbs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

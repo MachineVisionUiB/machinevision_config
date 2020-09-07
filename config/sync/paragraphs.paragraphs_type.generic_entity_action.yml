@@ -1,0 +1,10 @@
+uuid: 0de44951-f4d2-4352-86e5-41a3b9703111
+langcode: en
+status: true
+dependencies: {  }
+id: generic_entity_action
+label: 'Generic Entity Action (Thing)'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Generic Entity Action (Thing)'
+behavior_plugins: {  }

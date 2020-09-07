@@ -1,0 +1,19 @@
+uuid: 9bdd4be7-9565-4f48-9fbb-477b4154494c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_name
+    - node.type.person
+id: node.person.field_last_name
+field_name: field_last_name
+entity_type: node
+bundle: person
+label: 'Last name'
+description: 'Enter the family name of the person (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

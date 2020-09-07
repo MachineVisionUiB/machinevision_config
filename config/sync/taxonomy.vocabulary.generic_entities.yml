@@ -1,0 +1,8 @@
+uuid: 2e7edb4c-d169-469b-8205-739598532e4f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Generic Entities'
+vid: generic_entities
+description: 'An entity in a situation (corporation, government, image, creator) where we are not interested in details about race, gender etc'
+weight: 0

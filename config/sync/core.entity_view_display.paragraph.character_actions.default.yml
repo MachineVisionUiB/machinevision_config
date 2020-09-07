@@ -1,0 +1,30 @@
+uuid: fdd3ef4d-4d86-405c-acbd-78eed51fe9a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.character_actions.field_character
+    - field.field.paragraph.character_actions.field_verbs
+    - paragraphs.paragraphs_type.character_actions
+id: paragraph.character_actions.default
+targetEntityType: paragraph
+bundle: character_actions
+mode: default
+content:
+  field_character:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_verbs:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

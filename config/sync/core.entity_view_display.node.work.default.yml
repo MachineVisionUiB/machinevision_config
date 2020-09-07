@@ -1,0 +1,193 @@
+uuid: 892ab2d9-fe88-46de-8d47-b7cc62170e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comments.default
+    - field.field.node.work.field_author_name
+    - field.field.node.work.field_characters
+    - field.field.node.work.field_comment
+    - field.field.node.work.field_machine_vision_situation
+    - field.field.node.work.field_media_asset
+    - field.field.node.work.field_multi_image
+    - field.field.node.work.field_notes
+    - field.field.node.work.field_publication_type
+    - field.field.node.work.field_pullquote
+    - field.field.node.work.field_record_status
+    - field.field.node.work.field_science_fiction
+    - field.field.node.work.field_sentiment
+    - field.field.node.work.field_technologies_referenced
+    - field.field.node.work.field_technologies_used
+    - field.field.node.work.field_textfield
+    - field.field.node.work.field_themes
+    - field.field.node.work.field_url
+    - field.field.node.work.field_year
+    - node.type.work
+  module:
+    - comment
+    - datetime
+    - link
+    - text
+    - user
+id: node.work.default
+targetEntityType: node
+bundle: work
+mode: default
+content:
+  field_author_name:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_characters:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_comment:
+    weight: 18
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_machine_vision_situation:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_asset:
+    type: entity_reference_entity_view
+    weight: 15
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_multi_image:
+    type: entity_reference_entity_view
+    weight: 14
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_notes:
+    weight: 17
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_publication_type:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_pullquote:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_record_status:
+    weight: 16
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_science_fiction:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_sentiment:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_technologies_referenced:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_technologies_used:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_textfield:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_themes:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_url:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_year:
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_year
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

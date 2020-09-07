@@ -1,0 +1,29 @@
+uuid: f199b7d9-f969-4917-9bb0-79047113cbd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gender
+    - node.type.character
+    - taxonomy.vocabulary.gender
+id: node.character.field_gender
+field_name: field_gender
+entity_type: node
+bundle: character
+label: Gender
+description: 'Female, Male, Non-binary/Other, Unknown/Not applicable'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gender: gender
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

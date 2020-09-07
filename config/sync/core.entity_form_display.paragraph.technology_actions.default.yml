@@ -1,0 +1,32 @@
+uuid: 82627858-02d8-44ba-897a-be84283fd9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.technology_actions.field_technology
+    - field.field.paragraph.technology_actions.field_verbs
+    - paragraphs.paragraphs_type.technology_actions
+id: paragraph.technology_actions.default
+targetEntityType: paragraph
+bundle: technology_actions
+mode: default
+content:
+  field_technology:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_verbs:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+hidden:
+  created: true
+  status: true

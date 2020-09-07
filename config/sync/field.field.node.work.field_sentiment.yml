@@ -1,0 +1,29 @@
+uuid: 5669618f-91bf-4046-a90d-d82a7006c7ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sentiment
+    - node.type.work
+    - taxonomy.vocabulary.sentiment
+id: node.work.field_sentiment
+field_name: field_sentiment
+entity_type: node
+bundle: work
+label: Sentiment
+description: 'How is the machine vision portrayed in the work? What is (are) the dominant attitude(s) towards the machine vision? '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sentiment: sentiment
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

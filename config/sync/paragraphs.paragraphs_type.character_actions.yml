@@ -1,0 +1,10 @@
+uuid: f7a5fe40-0994-4b6b-bad6-5330f9ea37fc
+langcode: en
+status: true
+dependencies: {  }
+id: character_actions
+label: 'Character Actions'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Character Actions'
+behavior_plugins: {  }

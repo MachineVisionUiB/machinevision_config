@@ -1,0 +1,36 @@
+uuid: dd2c29a9-96ca-430b-ae7e-48905a3c1579
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.generic_entity_action.field_generic_entity_thing
+    - field.field.paragraph.generic_entity_action.field_verbs
+    - paragraphs.paragraphs_type.generic_entity_action
+id: paragraph.generic_entity_action.default
+targetEntityType: paragraph
+bundle: generic_entity_action
+mode: default
+content:
+  field_generic_entity_thing:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_verbs:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+hidden:
+  created: true
+  status: true

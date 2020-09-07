@@ -1,0 +1,28 @@
+uuid: 80ade03c-e342-4594-8ebb-bc30ad4d855b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multi_image
+    - media.type.image
+    - node.type.machine_vision_situation
+id: node.machine_vision_situation.field_multi_image
+field_name: field_multi_image
+entity_type: node
+bundle: machine_vision_situation
+label: 'Screenshots or images'
+description: 'Please upload a screenshot if relevant.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

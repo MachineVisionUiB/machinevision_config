@@ -1,0 +1,169 @@
+uuid: 560028a9-5c16-4f07-b1f5-2470eee59b18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.character.field_age
+    - field.field.node.character.field_comment
+    - field.field.node.character.field_customizable
+    - field.field.node.character.field_description
+    - field.field.node.character.field_gender
+    - field.field.node.character.field_image
+    - field.field.node.character.field_individual_or_group
+    - field.field.node.character.field_media
+    - field.field.node.character.field_optional_notes
+    - field.field.node.character.field_race_ethnicity
+    - field.field.node.character.field_species
+    - node.type.character
+  module:
+    - comment
+    - media_library
+    - path
+    - text
+id: node.character.default
+targetEntityType: node
+bundle: character
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_age:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_comment:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_customizable:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_gender:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    type: media_library_widget
+    weight: 9
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_individual_or_group:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_media:
+    type: media_library_widget
+    weight: 10
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_optional_notes:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_race_ethnicity:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_species:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 18
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

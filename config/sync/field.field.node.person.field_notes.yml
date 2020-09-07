@@ -1,0 +1,19 @@
+uuid: da14b70f-d9fc-4c66-acfe-af7c5c7be927
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.person
+id: node.person.field_notes
+field_name: field_notes
+entity_type: node
+bundle: person
+label: Notes
+description: 'Please do NOT enter potentially sensitive personal information here. Not currently visible to people who are not logged in.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

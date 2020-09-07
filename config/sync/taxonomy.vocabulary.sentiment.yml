@@ -1,0 +1,8 @@
+uuid: 13b64008-bfba-45b2-929f-04012407436b
+langcode: en
+status: true
+dependencies: {  }
+name: Sentiment
+vid: sentiment
+description: 'How is machine vision portrayed in the work? What is (are) the dominant attitude(s) towards the machine vision?  '
+weight: 0

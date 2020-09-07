@@ -1,0 +1,29 @@
+uuid: 2e0f0c17-6c0b-4283-a97b-8e64fc32ea3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_generic_entity_thing
+    - paragraphs.paragraphs_type.generic_entity_action
+    - taxonomy.vocabulary.generic_entities
+id: paragraph.generic_entity_action.field_generic_entity_thing
+field_name: field_generic_entity_thing
+entity_type: paragraph
+bundle: generic_entity_action
+label: 'This entity'
+description: 'A generic entity ("thing") is an entity like a corporation, a government, an image, the creator of a work) where we are not interested in details about race, age, gender, species etc. Established tags: User, Creator, Corporation, Government, Military, Image, Video, Humans. This is a free tagging list for now, so feel free to add more, but please check to see if your tags autocomplete to avoid duplication or almost-identical terms. Also consider using Character instead - e.g. "Group of cyborgs in X" or "Circle Users" if a group has shared characteristics.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      generic_entities: generic_entities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 2890a7dc-24cf-47e5-9dd8-024dc3c3810c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_machine_vision_situation
+    - node.type.machine_vision_situation
+    - node.type.work
+id: node.work.field_machine_vision_situation
+field_name: field_machine_vision_situation
+entity_type: node
+bundle: work
+label: 'Situation machine vision is used in'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      machine_vision_situation: machine_vision_situation
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 56c5be8c-dd08-457b-950c-ede0eb716c50
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.machine_vision_situation
+id: node.machine_vision_situation.title
+field_name: title
+entity_type: node
+bundle: machine_vision_situation
+label: 'Machine vision situation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

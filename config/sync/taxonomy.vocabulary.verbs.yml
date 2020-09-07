@@ -1,0 +1,8 @@
+uuid: eca9d29f-aae9-47fe-893b-3ac74fff385e
+langcode: en
+status: true
+dependencies: {  }
+name: Verbs
+vid: verbs
+description: 'Doing words to describe the actors, tools, owners and objects. '
+weight: 0

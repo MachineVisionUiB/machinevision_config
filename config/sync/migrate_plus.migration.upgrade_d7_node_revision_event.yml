@@ -1,0 +1,204 @@
+uuid: 99c86e68-9ff5-49f4-8d43-56c081f4e7eb
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_event
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Event)'
+source:
+  plugin: d7_node_revision
+  node_type: event
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_event/0/status:
+    -
+      plugin: get
+      source: comment
+  field_archiveurl:
+    -
+      plugin: field_link
+      source: field_archiveurl
+  field_associated_event:
+    -
+      plugin: get
+      source: field_associated_event
+  field_curator:
+    -
+      plugin: get
+      source: field_curator
+  field_date:
+    -
+      plugin: sub_process
+      source: field_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: Y-m-d
+          source: value
+  field_editorial_notes:
+    -
+      plugin: get
+      source: field_editorial_notes
+  field_email:
+    -
+      plugin: sub_process
+      source: field_email
+      process:
+        value: email
+  field_event_abstract_lang:
+    -
+      plugin: get
+      source: field_event_abstract_lang
+  field_event_abstract_lang_tax:
+    -
+      plugin: sub_process
+      source: field_event_abstract_lang_tax
+      process:
+        target_id: tid
+  field_event_series:
+    -
+      plugin: get
+      source: field_event_series
+  field_files:
+    -
+      plugin: sub_process
+      source: field_files
+      process:
+        target_id: fid
+  field_individual_organizers:
+    -
+      plugin: get
+      source: field_individual_organizers
+  field_location:
+    -
+      plugin: get
+      source: field_location
+  field_media_asset:
+    -
+      plugin: sub_process
+      source: field_media_asset
+      process:
+        target_id: fid
+  field_multi_images:
+    -
+      plugin: sub_process
+      source: field_multi_images
+      process:
+        target_id: fid
+  field_node_ref:
+    -
+      plugin: get
+      source: field_node_ref
+  field_record_status_tax:
+    -
+      plugin: sub_process
+      source: field_record_status_tax
+      process:
+        target_id: tid
+  field_textfield:
+    0:
+      plugin: get
+      source: field_textfield
+    media_wysiwyg:
+      plugin: media_wysiwyg_filter
+  field_url:
+    -
+      plugin: field_link
+      source: field_url
+  taxonomy_vocabulary_1:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_1
+      process:
+        target_id: tid
+  taxonomy_vocabulary_2:
+    -
+      plugin: sub_process
+      source: taxonomy_vocabulary_2
+      process:
+        target_id: tid
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: event
+migration_dependencies:
+  required:
+    - upgrade_d7_node_book
+    - upgrade_d7_node_character
+    - upgrade_d7_node_class_group
+    - upgrade_d7_node_critical_writing
+    - upgrade_d7_node_databases_and_archives
+    - upgrade_d7_node_event
+    - upgrade_d7_node_landing_page
+    - upgrade_d7_node_machine_vision_situation
+    - upgrade_d7_node_notebook
+    - upgrade_d7_node_notebook_entry
+    - upgrade_d7_node_organization
+    - upgrade_d7_node_page
+    - upgrade_d7_node_panel
+    - upgrade_d7_node_person
+    - upgrade_d7_node_platform_software
+    - upgrade_d7_node_publisher
+    - upgrade_d7_node_research_collection
+    - upgrade_d7_node_story
+    - upgrade_d7_node_teaching_resource
+    - upgrade_d7_node_work
+  optional: {  }

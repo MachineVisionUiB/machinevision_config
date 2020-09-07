@@ -1,0 +1,115 @@
+uuid: 1a5584b7-8465-478d-85ca-b36d57869f29
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comments.default
+    - field.field.node.person.field_alias_or_pseudonym
+    - field.field.node.person.field_comment
+    - field.field.node.person.field_country
+    - field.field.node.person.field_editorial_notes
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_notes
+    - field.field.node.person.field_record_status
+    - field.field.node.person.field_url
+    - node.type.person
+  module:
+    - address
+    - comment
+    - link
+    - user
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  field_alias_or_pseudonym:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_comment:
+    weight: 10
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_country:
+    weight: 6
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: address_country_default
+    region: content
+  field_editorial_notes:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_middle_name:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_notes:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_record_status:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_url:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: b438b3f9-20b1-4821-8c57-6c9eb4d4a6e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pullquote
+    - node.type.work
+  module:
+    - text
+id: node.work.field_pullquote
+field_name: field_pullquote
+entity_type: node
+bundle: work
+label: 'Pull Quotes'
+description: 'Enter representative passages of text (1-3 sentences) excerpted from the work.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

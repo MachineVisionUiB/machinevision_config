@@ -1,0 +1,29 @@
+uuid: bb150233-a909-486b-8ddd-b6c0742c67c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_type
+    - node.type.work
+    - taxonomy.vocabulary.creative_work_publication_type
+id: node.work.field_publication_type
+field_name: field_publication_type
+entity_type: node
+bundle: work
+label: 'Publication Type'
+description: 'Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      creative_work_publication_type: creative_work_publication_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

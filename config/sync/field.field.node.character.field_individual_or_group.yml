@@ -1,0 +1,23 @@
+uuid: 01562f4f-d5dd-463e-ae45-943f4a6033a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_individual_or_group
+    - node.type.character
+id: node.character.field_individual_or_group
+field_name: field_individual_or_group
+entity_type: node
+bundle: character
+label: 'Individual or group?'
+description: 'Tick this box if you are describing a group of people. Leave unticked if the character is an individual. If describing a group, only select characteristics that are shared by the whole group. E.g. mark the group Circle Users as Human, but leave the rest empty.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Group
+  off_label: Individual
+field_type: boolean

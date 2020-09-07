@@ -1,0 +1,15 @@
+uuid: 914239ee-93fd-470a-a569-998f5b3cc174
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - uib_humanists
+_core:
+  default_config_hash: 53ICJdqVMePHew-akxsLVClQOvrCURk46iTefKCV-o8
+id: uib_comments
+label: 'UiB comments'
+description: 'Migrate node comments'
+source_type: 'Drupal 7'
+module: null
+shared_configuration: null

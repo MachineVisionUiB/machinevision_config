@@ -1,0 +1,29 @@
+uuid: dd7cebdc-69e1-4b62-8814-6660308e7e05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_verbs
+    - paragraphs.paragraphs_type.character_actions
+    - taxonomy.vocabulary.verbs
+id: paragraph.character_actions.field_verbs
+field_name: field_verbs
+entity_type: paragraph
+bundle: character_actions
+label: Is
+description: 'Type in one or more verbs that describe the action the Character is taking. Use -ing verbs when the Character is active, and either write Passive or use passive verbs (ending in -ed) when the Character is the object or target of the action.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      verbs: verbs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

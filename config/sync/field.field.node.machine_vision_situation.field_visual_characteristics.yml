@@ -1,0 +1,29 @@
+uuid: 0d1b1fab-283e-43e3-8dd9-f843092fba14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visual_characteristics
+    - node.type.machine_vision_situation
+    - taxonomy.vocabulary.visual_characteristics
+id: node.machine_vision_situation.field_visual_characteristics
+field_name: field_visual_characteristics
+entity_type: node
+bundle: machine_vision_situation
+label: 'Aesthetic characteristics'
+description: 'Use free tagging to characterize the visual and other stylistic characteristics of the work. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      visual_characteristics: visual_characteristics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

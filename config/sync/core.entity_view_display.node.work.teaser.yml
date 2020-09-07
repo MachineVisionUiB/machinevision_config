@@ -1,0 +1,56 @@
+uuid: f5c6fbb8-63d6-49ea-b411-9e306d75b35b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.work.field_author_name
+    - field.field.node.work.field_characters
+    - field.field.node.work.field_comment
+    - field.field.node.work.field_machine_vision_situation
+    - field.field.node.work.field_media_asset
+    - field.field.node.work.field_multi_image
+    - field.field.node.work.field_notes
+    - field.field.node.work.field_publication_type
+    - field.field.node.work.field_pullquote
+    - field.field.node.work.field_record_status
+    - field.field.node.work.field_science_fiction
+    - field.field.node.work.field_sentiment
+    - field.field.node.work.field_technologies_referenced
+    - field.field.node.work.field_technologies_used
+    - field.field.node.work.field_textfield
+    - field.field.node.work.field_themes
+    - field.field.node.work.field_url
+    - field.field.node.work.field_year
+    - node.type.work
+  module:
+    - user
+id: node.work.teaser
+targetEntityType: node
+bundle: work
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_author_name: true
+  field_characters: true
+  field_comment: true
+  field_machine_vision_situation: true
+  field_media_asset: true
+  field_multi_image: true
+  field_notes: true
+  field_publication_type: true
+  field_pullquote: true
+  field_record_status: true
+  field_science_fiction: true
+  field_sentiment: true
+  field_technologies_referenced: true
+  field_technologies_used: true
+  field_textfield: true
+  field_themes: true
+  field_url: true
+  field_year: true

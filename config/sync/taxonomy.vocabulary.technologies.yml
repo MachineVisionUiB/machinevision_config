@@ -1,0 +1,8 @@
+uuid: 2806316c-113a-49c1-9c5d-be96db82fd2c
+langcode: en
+status: true
+dependencies: {  }
+name: Technologies
+vid: technologies
+description: 'A list of machine vision technologies that are relevant to the research project.'
+weight: 0

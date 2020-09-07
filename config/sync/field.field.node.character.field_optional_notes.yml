@@ -1,0 +1,21 @@
+uuid: e0b4cb48-3dad-41a7-8590-1167186756a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_optional_notes
+    - node.type.character
+  module:
+    - text
+id: node.character.field_optional_notes
+field_name: field_optional_notes
+entity_type: node
+bundle: character
+label: 'Optional notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
