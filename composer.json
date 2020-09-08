@@ -15,7 +15,11 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/steinmb/elmcip_person"
+            "url": "https://github.com/smbjorklund/elmcip_person"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/smbjorklund/machine-vision-theme"
         }
     ],
     "require": {
@@ -35,7 +39,8 @@
         "drupal/search_api": "^1.17",
         "drupal/views_data_export": "^1.0",
         "drush/drush": "^10.2",
-        "steinmb/elmcip_person": "^1.0"
+        "smbjorklund/elmcip_person": "^1.0",
+        "smbjorklund/machine-vision-theme": "^1.0"
     },
     "require-dev": {
         "drupal/entity_browser": "^2.5"
