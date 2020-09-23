@@ -13,6 +13,7 @@ dependencies:
     - field.storage.node.field_themes
     - field.storage.node.field_year
     - node.type.work
+    - user.role.authenticated
   module:
     - csv_serialization
     - datetime
@@ -36,9 +37,10 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -364,6 +366,8 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: ''
+      link_display: page_1
     cache_metadata:
       max-age: -1
       contexts:
@@ -371,7 +375,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
         - 'config:field.storage.node.field_year'
@@ -401,7 +405,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
         - 'config:field.storage.node.field_year'
@@ -1615,10 +1619,10 @@ display:
           plugin_id: field
       defaults:
         fields: false
-      path: data/node/%
+      path: data/creative_work_all
       filename: Creative-works-with-all-attributes
       automatic_download: false
-      store_in_public_file_directory: null
+      store_in_public_file_directory: false
       redirect_to_display: none
       custom_redirect_path: false
       include_query_params: false
@@ -1636,6 +1640,20 @@ display:
             encoding: utf8
             utf8_bom: '0'
             use_serializer_encode_only: false
+      auth:
+        - cookie
+      displays:
+        page_1: page_1
+        default: '0'
+        block_1: '0'
+      export_method: batch
+      export_batch_size: 200
+      export_limit: 1000
+      pager:
+        type: some
+        options:
+          items_per_page: 1000
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -1643,7 +1661,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_characters'
         - 'config:field.storage.node.field_machine_vision_situation'
@@ -1669,7 +1687,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
         - 'config:field.storage.node.field_year'
