@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - node
+    - paragraphs
     - search_api
   config:
     - field.storage.node.field_country
@@ -11,7 +12,10 @@ dependencies:
     - field.storage.node.field_science_fiction
     - field.storage.node.field_sentiment
     - field.storage.node.field_sexuality
+    - field.storage.node.field_machine_vision_situation
     - field.storage.node.field_species
+    - field.storage.node.field_actions
+    - field.storage.paragraph.field_verbs
     - field.storage.node.field_year
     - search_api.server.sql_database
     - core.entity_view_mode.node.search_index
@@ -28,6 +32,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_country
+  field_machine_vision_situation:
+    label: 'Situation machine vision is used in'
+    datasource_id: 'entity:node'
+    property_path: field_machine_vision_situation
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_machine_vision_situation
   field_race_ethnicity:
     label: Race/ethnicity
     datasource_id: 'entity:node'
@@ -68,6 +80,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_species
+  field_verbs:
+    label: 'Who does what? » Paragraph » Is'
+    datasource_id: 'entity:node'
+    property_path: 'field_actions:entity:field_verbs'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_actions
+        - field.storage.paragraph.field_verbs
+      module:
+        - paragraphs
   field_year:
     label: Year
     datasource_id: 'entity:node'

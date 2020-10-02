@@ -1,0 +1,146 @@
+uuid: 7994a750-d193-448d-b5db-16ca51374ab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_character
+    - field.storage.paragraph.field_generic_entity_thing
+    - field.storage.paragraph.field_technology
+    - field.storage.paragraph.field_verbs
+    - search_api.server.sql_database
+  module:
+    - paragraphs
+    - search_api
+id: actions
+name: Actions
+description: ''
+read_only: false
+field_settings:
+  field_character:
+    label: 'This character'
+    datasource_id: 'entity:paragraph'
+    property_path: field_character
+    type: integer
+    dependencies:
+      config:
+        - field.storage.paragraph.field_character
+  field_generic_entity_thing:
+    label: 'This entity'
+    datasource_id: 'entity:paragraph'
+    property_path: field_generic_entity_thing
+    type: integer
+    dependencies:
+      config:
+        - field.storage.paragraph.field_generic_entity_thing
+  field_technology:
+    label: 'This technology'
+    datasource_id: 'entity:paragraph'
+    property_path: field_technology
+    type: integer
+    dependencies:
+      config:
+        - field.storage.paragraph.field_technology
+  field_verbs:
+    label: Is
+    datasource_id: 'entity:paragraph'
+    property_path: field_verbs
+    type: integer
+    dependencies:
+      config:
+        - field.storage.paragraph.field_verbs
+  type:
+    label: 'Paragraph type'
+    datasource_id: 'entity:paragraph'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - paragraphs
+datasource_settings:
+  'entity:paragraph':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  reverse_entity_references: {  }
+  stemmer:
+    all_fields: true
+    fields: {  }
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  stopwords:
+    all_fields: false
+    fields: {  }
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+  tokenizer:
+    all_fields: true
+    fields: {  }
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: sql_database

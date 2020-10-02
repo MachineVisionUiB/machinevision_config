@@ -1,0 +1,28 @@
+uuid: aa66afe9-7fc5-4c8a-a04b-4a367e5203f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.this_character
+  module:
+    - facets
+    - system
+  theme:
+    - machinevision
+id: thischaracter
+theme: machinevision
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:this_character'
+settings:
+  id: 'facet_block:this_character'
+  label: 'This character'
+  provider: facets
+  label_display: visible
+  block_id: thischaracter
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search_action\r\n/search_action/*"
+    negate: false

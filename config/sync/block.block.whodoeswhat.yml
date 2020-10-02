@@ -1,0 +1,28 @@
+uuid: 169d629b-c866-4612-96f4-3a726084e05a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.who_does_what_
+  module:
+    - facets
+    - system
+  theme:
+    - machinevision
+id: whodoeswhat
+theme: machinevision
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:who_does_what_'
+settings:
+  id: 'facet_block:who_does_what_'
+  label: 'Who does what?'
+  provider: facets
+  label_display: visible
+  block_id: whodoeswhat
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
