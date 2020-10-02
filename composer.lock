@@ -948,16 +948,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "ef6b7e662ce2d8b0af9004307bdf26350aad4df1"
+                "reference": "9e8b241ad65514c40d60dabd5e3d15f692279e9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/ef6b7e662ce2d8b0af9004307bdf26350aad4df1",
-                "reference": "ef6b7e662ce2d8b0af9004307bdf26350aad4df1",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/9e8b241ad65514c40d60dabd5e3d15f692279e9c",
+                "reference": "9e8b241ad65514c40d60dabd5e3d15f692279e9c",
                 "shasum": ""
             },
             "require": {
@@ -1008,7 +1008,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2020-08-30T17:37:39+00:00"
+            "time": "2020-09-30T21:27:11+00:00"
         },
         {
             "name": "consolidation/config",
@@ -3055,7 +3055,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/olivero.git",
-                "reference": "4071902995ba88687a4e326b1c7d004f9340589d"
+                "reference": "82d96671ac3787051ae6a75b9a5d40c2bb53cbfc"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -3066,8 +3066,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+15-dev",
-                    "datestamp": "1600800237",
+                    "version": "8.x-1.0-beta2+49-dev",
+                    "datestamp": "1601581790",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3098,7 +3098,7 @@
                 "source": "https://git.drupalcode.org/project/olivero",
                 "issues": "https://www.drupal.org/project/issues/olivero"
             },
-            "time": "2020-09-22T18:57:18+00:00"
+            "time": "2020-10-01T20:02:36+00:00"
         },
         {
             "name": "drupal/paragraphs",
@@ -4994,16 +4994,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.0",
+            "version": "v4.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9"
+                "reference": "658f1be311a230e0907f5dfe0213742aff0596de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1c13d05035deff45f1230ca68bd7d74d621762d9",
-                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/658f1be311a230e0907f5dfe0213742aff0596de",
+                "reference": "658f1be311a230e0907f5dfe0213742aff0596de",
                 "shasum": ""
             },
             "require": {
@@ -5042,7 +5042,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-09-19T14:52:48+00:00"
+            "time": "2020-09-26T10:30:38+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -5506,28 +5506,28 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.11.1",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "b20034be5efcdab4fb60ca3a29cba2949aead160"
+                "reference": "8ce87516be71aae9b956f81906aaf0338e0d8a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/b20034be5efcdab4fb60ca3a29cba2949aead160",
-                "reference": "b20034be5efcdab4fb60ca3a29cba2949aead160",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/8ce87516be71aae9b956f81906aaf0338e0d8a2d",
+                "reference": "8ce87516be71aae9b956f81906aaf0338e0d8a2d",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.2",
-                "php": "^7.2",
-                "phpdocumentor/reflection-docblock": "^5.0",
+                "php": "^7.2 || ~8.0, <8.1",
+                "phpdocumentor/reflection-docblock": "^5.2",
                 "sebastian/comparator": "^3.0 || ^4.0",
                 "sebastian/recursion-context": "^3.0 || ^4.0"
             },
             "require-dev": {
                 "phpspec/phpspec": "^6.0",
-                "phpunit/phpunit": "^8.0"
+                "phpunit/phpunit": "^8.0 || ^9.0 <9.3"
             },
             "type": "library",
             "extra": {
@@ -5565,7 +5565,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2020-07-08T12:44:21+00:00"
+            "time": "2020-09-29T09:10:42+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -7209,16 +7209,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "f53310646af9901292488b2ff36e26ea10f545f5"
+                "reference": "4012fac896bf5c1ac435d8c5d98fa2163241dbcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/f53310646af9901292488b2ff36e26ea10f545f5",
-                "reference": "f53310646af9901292488b2ff36e26ea10f545f5",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/4012fac896bf5c1ac435d8c5d98fa2163241dbcc",
+                "reference": "4012fac896bf5c1ac435d8c5d98fa2163241dbcc",
                 "shasum": ""
             },
             "require": {
@@ -7278,7 +7278,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-22T17:28:00+00:00"
+            "time": "2020-09-02T16:08:58+00:00"
         },
         {
             "name": "symfony/console",
@@ -7373,7 +7373,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -7598,16 +7598,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "6dd1e7adef4b7efeeb9691fd619279027d4dcf85"
+                "reference": "69690afed0881bb53f85dc1637e6b85416a1cd33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/6dd1e7adef4b7efeeb9691fd619279027d4dcf85",
-                "reference": "6dd1e7adef4b7efeeb9691fd619279027d4dcf85",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/69690afed0881bb53f85dc1637e6b85416a1cd33",
+                "reference": "69690afed0881bb53f85dc1637e6b85416a1cd33",
                 "shasum": ""
             },
             "require": {
@@ -7669,7 +7669,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-12T06:20:35+00:00"
+            "time": "2020-09-02T16:08:58+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -7886,16 +7886,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "27575bcbc68db1f6d06218891296572c9b845704"
+                "reference": "0d386979828c15d37ff936bf9bae2ecbfa36d7dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/27575bcbc68db1f6d06218891296572c9b845704",
-                "reference": "27575bcbc68db1f6d06218891296572c9b845704",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/0d386979828c15d37ff936bf9bae2ecbfa36d7dc",
+                "reference": "0d386979828c15d37ff936bf9bae2ecbfa36d7dc",
                 "shasum": ""
             },
             "require": {
@@ -7946,20 +7946,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-21T17:19:37+00:00"
+            "time": "2020-09-02T16:08:58+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2a78590b2c7e3de5c429628457c47541c58db9c7"
+                "reference": "5ef0f6c609c1a36f723880dfe78301199bc96868"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2a78590b2c7e3de5c429628457c47541c58db9c7",
-                "reference": "2a78590b2c7e3de5c429628457c47541c58db9c7",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/5ef0f6c609c1a36f723880dfe78301199bc96868",
+                "reference": "5ef0f6c609c1a36f723880dfe78301199bc96868",
                 "shasum": ""
             },
             "require": {
@@ -8009,7 +8009,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-17T09:56:45+00:00"
+            "time": "2020-09-02T16:08:58+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -8187,16 +8187,16 @@
         },
         {
             "name": "symfony/lock",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/lock.git",
-                "reference": "8eac1a52d1a3882d0cb5f990e0f907d5457e616f"
+                "reference": "8deb195a9136328675388835cf4b06405ccc458e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/lock/zipball/8eac1a52d1a3882d0cb5f990e0f907d5457e616f",
-                "reference": "8eac1a52d1a3882d0cb5f990e0f907d5457e616f",
+                "url": "https://api.github.com/repos/symfony/lock/zipball/8deb195a9136328675388835cf4b06405ccc458e",
+                "reference": "8deb195a9136328675388835cf4b06405ccc458e",
                 "shasum": ""
             },
             "require": {
@@ -8262,7 +8262,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-17T07:39:58+00:00"
+            "time": "2020-09-24T06:54:33+00:00"
         },
         {
             "name": "symfony/mime",
@@ -8343,16 +8343,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v4.4.13",
+            "version": "v4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "bba78ce46a13a8d761f6330c718924dc6ca7d3b0"
+                "reference": "edad55510b7804223e9f0eb410ac8b95d3007a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/bba78ce46a13a8d761f6330c718924dc6ca7d3b0",
-                "reference": "bba78ce46a13a8d761f6330c718924dc6ca7d3b0",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/edad55510b7804223e9f0eb410ac8b95d3007a19",
+                "reference": "edad55510b7804223e9f0eb410ac8b95d3007a19",
                 "shasum": ""
             },
             "require": {
@@ -8418,7 +8418,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-01T09:34:43+00:00"
+            "time": "2020-09-15T07:51:47+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
