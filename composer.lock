@@ -7166,12 +7166,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:smbjorklund/machine-vision-theme.git",
-                "reference": "74feb34faac6143404e5da19911a1fe909d6678e"
+                "reference": "0f8c32bd09f60679736ef068f6938c3007d5f113"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smbjorklund/machine-vision-theme/zipball/74feb34faac6143404e5da19911a1fe909d6678e",
-                "reference": "74feb34faac6143404e5da19911a1fe909d6678e",
+                "url": "https://api.github.com/repos/smbjorklund/machine-vision-theme/zipball/0f8c32bd09f60679736ef068f6938c3007d5f113",
+                "reference": "0f8c32bd09f60679736ef068f6938c3007d5f113",
                 "shasum": ""
             },
             "require": {
@@ -7184,10 +7184,10 @@
             "description": "Machine vision theme. Olivero subtheme",
             "homepage": "https://github.org/smbjorklund/machine-vision-theme",
             "support": {
-                "source": "https://github.com/smbjorklund/machine-vision-theme/tree/1.0",
+                "source": "https://github.com/smbjorklund/machine-vision-theme/tree/8.x-dev",
                 "issues": "https://github.com/smbjorklund/machine-vision-theme/issues"
             },
-            "time": "2020-09-08T08:20:10+00:00"
+            "time": "2020-10-26T20:35:32+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
