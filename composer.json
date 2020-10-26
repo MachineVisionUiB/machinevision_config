@@ -44,6 +44,7 @@
         "smbjorklund/machine-vision-theme": "dev-8.x-dev"
     },
     "require-dev": {
+        "drupal/devel": "^4.0",
         "drupal/entity_browser": "^2.5"
     },
     "conflict": {

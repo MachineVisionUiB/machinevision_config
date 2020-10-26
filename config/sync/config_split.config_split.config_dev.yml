@@ -1,0 +1,16 @@
+uuid: dc302244-3abf-4484-a1a0-9afb3a53f640
+langcode: en
+status: false
+dependencies: {  }
+id: config_dev
+label: 'Develop configuration'
+description: 'Custom modules, settings used in dev.'
+folder: ../config/dev
+module:
+  devel: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
