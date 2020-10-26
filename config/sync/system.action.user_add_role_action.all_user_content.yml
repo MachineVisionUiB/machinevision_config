@@ -1,0 +1,14 @@
+uuid: 52ee4c7a-c8e8-4634-a7b5-585bcda2d681
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.all_user_content
+  module:
+    - user
+id: user_add_role_action.all_user_content
+label: 'Add the All user content role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: all_user_content

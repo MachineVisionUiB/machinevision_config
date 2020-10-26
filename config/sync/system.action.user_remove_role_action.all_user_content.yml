@@ -1,0 +1,14 @@
+uuid: bc9893c0-ab9e-4f93-bbf4-8fbdfcd45fb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.all_user_content
+  module:
+    - user
+id: user_remove_role_action.all_user_content
+label: 'Remove the All user content role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: all_user_content

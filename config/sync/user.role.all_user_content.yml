@@ -1,0 +1,46 @@
+uuid: a58fa020-812e-4da2-8ea1-28fcf6462201
+langcode: en
+status: true
+dependencies: {  }
+id: all_user_content
+label: 'All user content'
+weight: 2
+is_admin: null
+permissions:
+  - 'access files overview'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'delete all revisions'
+  - 'delete any audio media'
+  - 'delete any character content'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any landing_page content'
+  - 'delete any machine_vision_situation content'
+  - 'delete any media'
+  - 'delete any person content'
+  - 'delete any platform_software content'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete any work content'
+  - 'delete character revisions'
+  - 'delete landing_page revisions'
+  - 'delete machine_vision_situation revisions'
+  - 'delete orphan revisions'
+  - 'delete person revisions'
+  - 'delete platform_software revisions'
+  - 'delete work revisions'
+  - 'edit any audio media'
+  - 'edit any character content'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any landing_page content'
+  - 'edit any machine_vision_situation content'
+  - 'edit any person content'
+  - 'edit any platform_software content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit any work content'
+  - 'edit own audio media'
+  - 'revert all revisions'
+  - 'update any media'
