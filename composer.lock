@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b3319e83861781896e4a69b3a122ebf",
+    "content-hash": "3a1c8eae18e830674db027200cb01a28",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7020,7 +7020,7 @@
         },
         {
             "name": "smbjorklund/machine-vision-theme",
-            "version": "1.0",
+            "version": "dev-8.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:smbjorklund/machine-vision-theme.git",
@@ -10139,7 +10139,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/olivero": 20
+        "drupal/olivero": 20,
+        "smbjorklund/machine-vision-theme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
