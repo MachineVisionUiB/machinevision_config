@@ -45,7 +45,8 @@
         "drupal/views_data_export": "^1.0",
         "drush/drush": "^10.2",
         "smbjorklund/elmcip_person": "^1.0",
-        "smbjorklund/machine-vision-theme": "dev-8.x-dev"
+        "smbjorklund/machine-vision-theme": "dev-8.x-dev",
+        "smbjorklund/machinevision_setup": "dev-8.x-dev"
     },
     "require-dev": {
         "drupal/devel": "^4.0",
