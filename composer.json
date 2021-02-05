@@ -43,6 +43,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/search_api": "^1.17",
+        "drupal/svg_image": "^1.14",
         "drupal/views_data_export": "^1.0",
         "drush/drush": "^10.2",
         "smbjorklund/elmcip_person": "^1.0",
