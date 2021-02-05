@@ -1,0 +1,22 @@
+uuid: 8871e8a9-e0ea-4de4-a9ea-bd14c05d705b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technologies
+  module:
+    - text
+id: taxonomy_term.technologies.default
+targetEntityType: taxonomy_term
+bundle: technologies
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

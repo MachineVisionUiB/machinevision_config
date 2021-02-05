@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.work.field_author_name
     - field.field.node.work.field_characters
     - field.field.node.work.field_comment
+    - field.field.node.work.field_country
     - field.field.node.work.field_machine_vision_situation
     - field.field.node.work.field_media_asset
     - field.field.node.work.field_multi_image
@@ -39,6 +40,7 @@ hidden:
   field_author_name: true
   field_characters: true
   field_comment: true
+  field_country: true
   field_machine_vision_situation: true
   field_media_asset: true
   field_multi_image: true
@@ -54,3 +56,4 @@ hidden:
   field_themes: true
   field_url: true
   field_year: true
+  search_api_excerpt: true

@@ -32,23 +32,13 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
-        components:
-          95d43a2e-e261-495d-a45f-11f2fd22206a:
-            uuid: 95d43a2e-e261-495d-a45f-11f2fd22206a
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:machine_vision_situation:links'
-            additional: {  }
-            weight: 0
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section
         layout_settings:
           label: ''
-          column_widths: 50-50
+          column_widths: 67-33
         components:
           2fbb11d8-8921-4709-b545-57610317bdd8:
             uuid: 2fbb11d8-8921-4709-b545-57610317bdd8
@@ -237,6 +227,25 @@ third_party_settings:
                   pager_id: 0
                 third_party_settings: {  }
                 type: comment_default
+            additional: {  }
+            weight: 3
+          d16d1520-c4d9-4c79-9395-2b56bc8e422e:
+            uuid: d16d1520-c4d9-4c79-9395-2b56bc8e422e
+            region: content
+            configuration:
+              id: 'field_block:node:machine_vision_situation:uid'
+              label: 'Authored by'
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 2
         third_party_settings: {  }

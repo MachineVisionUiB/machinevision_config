@@ -2,7 +2,7 @@ uuid: 5ec63f2a-e81f-46ba-9e47-d35dfe15daab
 langcode: en
 status: true
 dependencies: {  }
-name: 'Individual or Group'
+name: 'Group?'
 vid: individual_or_group
-description: ''
+description: 'Check this box if the character is a group of people.'
 weight: 0

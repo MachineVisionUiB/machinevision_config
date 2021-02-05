@@ -11,7 +11,7 @@ field_name: field_generic_entity_thing
 entity_type: paragraph
 bundle: generic_entity_action
 label: 'This entity'
-description: 'A generic entity ("thing") is an entity like a corporation, a government, an image, the creator of a work) where we are not interested in details about race, age, gender, species etc. Established tags: User, Creator, Corporation, Government, Military, Image, Video, Humans. This is a free tagging list for now, so feel free to add more, but please check to see if your tags autocomplete to avoid duplication or almost-identical terms. Also consider using Character instead - e.g. "Group of cyborgs in X" or "Circle Users" if a group has shared characteristics.'
+description: 'A generic entity ("thing") is an entity like a corporation, a government, an image, the creator of a work) where we are not interested in details about race, age, gender, species etc. Established tags: Corporation, Creator, Environment, Government, Image, Object, User, Law Enforcement (public or private police forces), Military‚ Humans in general.'
 required: false
 translatable: false
 default_value: {  }

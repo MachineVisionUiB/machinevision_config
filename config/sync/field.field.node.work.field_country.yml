@@ -1,0 +1,22 @@
+uuid: 9af128db-d6db-4142-a0d2-70d181d4a314
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.work
+  module:
+    - address
+id: node.work.field_country
+field_name: field_country
+entity_type: node
+bundle: work
+label: Country
+description: 'Please add the country or countries the work or creator is affiliated with. This will usually be the country where the artist or author or creators are resident, or where the production company is situated, but could also be the country the creator is originally from, or a country where the work was made. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+field_type: address_country

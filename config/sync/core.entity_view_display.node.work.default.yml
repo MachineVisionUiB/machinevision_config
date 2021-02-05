@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.work.field_author_name
     - field.field.node.work.field_characters
     - field.field.node.work.field_comment
+    - field.field.node.work.field_country
     - field.field.node.work.field_machine_vision_situation
     - field.field.node.work.field_media_asset
     - field.field.node.work.field_multi_image
@@ -24,6 +25,7 @@ dependencies:
     - field.field.node.work.field_year
     - node.type.work
   module:
+    - address
     - comment
     - datetime
     - layout_builder
@@ -103,7 +105,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 5
+            weight: 8
           8c95c5fc-a155-4247-9cb7-89e908335b5f:
             uuid: 8c95c5fc-a155-4247-9cb7-89e908335b5f
             region: first
@@ -119,7 +121,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 6
+            weight: 9
           6b9d68d0-2128-4d07-b0af-e7f84d48cbb5:
             uuid: 6b9d68d0-2128-4d07-b0af-e7f84d48cbb5
             region: first
@@ -135,7 +137,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 7
+            weight: 10
           7530db49-e62b-44c2-b87f-29ed0b855993:
             uuid: 7530db49-e62b-44c2-b87f-29ed0b855993
             region: first
@@ -151,7 +153,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 8
+            weight: 11
           8fdeafc1-699a-4a9d-b6c6-e65f89964a5f:
             uuid: 8fdeafc1-699a-4a9d-b6c6-e65f89964a5f
             region: second
@@ -203,7 +205,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 11
+            weight: 14
           aa954251-7ed5-45fa-9299-d53ee18622aa:
             uuid: aa954251-7ed5-45fa-9299-d53ee18622aa
             region: first
@@ -219,7 +221,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 10
+            weight: 13
           d4405db0-7f43-4cae-a4f4-12a4d3a0d8d9:
             uuid: d4405db0-7f43-4cae-a4f4-12a4d3a0d8d9
             region: second
@@ -281,7 +283,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 12
+            weight: 15
           074b75e1-cbab-4c33-a93d-b5bf6de79a4a:
             uuid: 074b75e1-cbab-4c33-a93d-b5bf6de79a4a
             region: first
@@ -297,7 +299,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 9
+            weight: 12
           3757d7c6-6313-4186-af7c-f9da8ead7a5f:
             uuid: 3757d7c6-6313-4186-af7c-f9da8ead7a5f
             region: second
@@ -316,6 +318,40 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 1
+          9a29efee-d56b-480c-a43a-57f5f5a37d9d:
+            uuid: 9a29efee-d56b-480c-a43a-57f5f5a37d9d
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:work:field_country'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: address_country_default
+            additional: {  }
+            weight: 7
+          b13f712d-ad11-487c-a2d6-e3887e435ae3:
+            uuid: b13f712d-ad11-487c-a2d6-e3887e435ae3
+            region: second
+            configuration:
+              id: 'field_block:node:work:uid'
+              label: 'Entered by'
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 7
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -369,6 +405,13 @@ content:
       pager_id: 0
     third_party_settings: {  }
     type: comment_default
+    region: content
+  field_country:
+    weight: 19
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_country_default
     region: content
   field_machine_vision_situation:
     weight: 12

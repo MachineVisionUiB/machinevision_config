@@ -154,7 +154,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Title of Creative Work (Description of Situation)'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
