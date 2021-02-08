@@ -8003,12 +8003,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:smbjorklund/machine-vision-theme.git",
-                "reference": "ab7d9ca159a0283a50e53d786a9dfd273d39e28a"
+                "reference": "21ef16dab496db7617850deab72ea06ef30273f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smbjorklund/machine-vision-theme/zipball/ab7d9ca159a0283a50e53d786a9dfd273d39e28a",
-                "reference": "ab7d9ca159a0283a50e53d786a9dfd273d39e28a",
+                "url": "https://api.github.com/repos/smbjorklund/machine-vision-theme/zipball/21ef16dab496db7617850deab72ea06ef30273f8",
+                "reference": "21ef16dab496db7617850deab72ea06ef30273f8",
                 "shasum": ""
             },
             "require": {
@@ -8025,7 +8025,7 @@
                 "source": "https://github.com/smbjorklund/machine-vision-theme/tree/8.x-dev",
                 "issues": "https://github.com/smbjorklund/machine-vision-theme/issues"
             },
-            "time": "2021-02-08T08:14:22+00:00"
+            "time": "2021-02-08T15:43:46+00:00"
         },
         {
             "name": "smbjorklund/machinevision_setup",
