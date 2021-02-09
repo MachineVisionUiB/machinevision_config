@@ -2908,17 +2908,17 @@
         },
         {
             "name": "drupal/csv_serialization",
-            "version": "2.0.0-beta3",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csv_serialization.git",
-                "reference": "8.x-2.0-beta3"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-2.0-beta3.zip",
-                "reference": "8.x-2.0-beta3",
-                "shasum": "b22f8a11c87cbaa16dab61da5c1cf0a6af48a024"
+                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "3531383a6926a4ed761be56553997c2a937449ac"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -2931,11 +2931,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-beta3",
-                    "datestamp": "1595876761",
+                    "version": "8.x-2.0",
+                    "datestamp": "1612801962",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -8003,12 +8003,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:smbjorklund/machine-vision-theme.git",
-                "reference": "21ef16dab496db7617850deab72ea06ef30273f8"
+                "reference": "5be05c4acc395c15243d13246d760970caeb7a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smbjorklund/machine-vision-theme/zipball/21ef16dab496db7617850deab72ea06ef30273f8",
-                "reference": "21ef16dab496db7617850deab72ea06ef30273f8",
+                "url": "https://api.github.com/repos/smbjorklund/machine-vision-theme/zipball/5be05c4acc395c15243d13246d760970caeb7a73",
+                "reference": "5be05c4acc395c15243d13246d760970caeb7a73",
                 "shasum": ""
             },
             "require": {
@@ -8025,7 +8025,7 @@
                 "source": "https://github.com/smbjorklund/machine-vision-theme/tree/8.x-dev",
                 "issues": "https://github.com/smbjorklund/machine-vision-theme/issues"
             },
-            "time": "2021-02-08T15:43:46+00:00"
+            "time": "2021-02-09T08:57:13+00:00"
         },
         {
             "name": "smbjorklund/machinevision_setup",
