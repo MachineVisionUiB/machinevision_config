@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ccd70a0943d7fdb1ea218e6c00cdcaa",
+    "content-hash": "31e0383ee33af17918a13d193b6a7f7d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5190,6 +5190,36 @@
             "time": "2020-12-10T19:40:30+00:00"
         },
         {
+            "name": "machinevisionuib/machine-vision-theme",
+            "version": "dev-8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:MachineVisionUiB/machine-vision-theme.git",
+                "reference": "76569b52714c4399831d5cc159d03f888229ea17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MachineVisionUiB/machine-vision-theme/zipball/76569b52714c4399831d5cc159d03f888229ea17",
+                "reference": "76569b52714c4399831d5cc159d03f888229ea17",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "default-branch": true,
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Machine vision theme. Olivero subtheme",
+            "homepage": "https://github.com/machinevisionuib/machine-vision-theme",
+            "support": {
+                "source": "https://github.com/MachineVisionUiB/machine-vision-theme/tree/8.x-dev",
+                "issues": "https://github.com/MachineVisionUiB/machine-vision-theme/issues"
+            },
+            "time": "2021-02-11T11:37:38+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.7.4",
             "source": {
@@ -7996,36 +8026,6 @@
                 "issues": "https://github.com/smbjorklund/elmcip_person/issues"
             },
             "time": "2020-09-08T08:26:45+00:00"
-        },
-        {
-            "name": "smbjorklund/machine-vision-theme",
-            "version": "dev-8.x-dev",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:smbjorklund/machine-vision-theme.git",
-                "reference": "5be05c4acc395c15243d13246d760970caeb7a73"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/smbjorklund/machine-vision-theme/zipball/5be05c4acc395c15243d13246d760970caeb7a73",
-                "reference": "5be05c4acc395c15243d13246d760970caeb7a73",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9"
-            },
-            "default-branch": true,
-            "type": "drupal-theme",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Machine vision theme. Olivero subtheme",
-            "homepage": "https://github.org/smbjorklund/machine-vision-theme",
-            "support": {
-                "source": "https://github.com/smbjorklund/machine-vision-theme/tree/8.x-dev",
-                "issues": "https://github.com/smbjorklund/machine-vision-theme/issues"
-            },
-            "time": "2021-02-09T08:57:13+00:00"
         },
         {
             "name": "smbjorklund/machinevision_setup",
@@ -11985,7 +11985,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/config_split": 10,
-        "smbjorklund/machine-vision-theme": 20,
+        "machinevisionuib/machine-vision-theme": 20,
         "smbjorklund/machinevision_setup": 20
     },
     "prefer-stable": true,

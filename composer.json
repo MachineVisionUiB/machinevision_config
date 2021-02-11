@@ -23,7 +23,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/smbjorklund/machine-vision-theme"
+            "url": "https://github.com/machinevisionuib/machine-vision-theme"
         }
     ],
     "require": {
@@ -47,7 +47,7 @@
         "drupal/views_data_export": "^1.0",
         "drush/drush": "^10.2",
         "smbjorklund/elmcip_person": "^1.0",
-        "smbjorklund/machine-vision-theme": "dev-8.x-dev",
+        "machinevisionuib/machine-vision-theme": "dev-8.x-dev",
         "smbjorklund/machinevision_setup": "dev-main"
     },
     "require-dev": {
