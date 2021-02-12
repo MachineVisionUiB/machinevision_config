@@ -19,7 +19,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/smbjorklund/machinevision_setup"
+            "url": "https://github.com/machinevisionuib/machinevision_setup"
         },
         {
             "type": "vcs",
@@ -48,7 +48,7 @@
         "drush/drush": "^10.2",
         "smbjorklund/elmcip_person": "^1.0",
         "machinevisionuib/machine-vision-theme": "dev-8.x-dev",
-        "smbjorklund/machinevision_setup": "dev-main"
+        "machinevisionuib/machinevision_setup": "dev-main"
     },
     "require-dev": {
         "drupal/devel": "^4.0",

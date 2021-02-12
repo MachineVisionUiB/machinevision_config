@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31e0383ee33af17918a13d193b6a7f7d",
+    "content-hash": "4559af3b601a225ebcd0c86517214b80",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5195,19 +5195,19 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:MachineVisionUiB/machine-vision-theme.git",
-                "reference": "76569b52714c4399831d5cc159d03f888229ea17"
+                "reference": "e9a4244de1eb2d77d8ecaa992018414cb63bcdbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MachineVisionUiB/machine-vision-theme/zipball/76569b52714c4399831d5cc159d03f888229ea17",
-                "reference": "76569b52714c4399831d5cc159d03f888229ea17",
+                "url": "https://api.github.com/repos/MachineVisionUiB/machine-vision-theme/zipball/e9a4244de1eb2d77d8ecaa992018414cb63bcdbc",
+                "reference": "e9a4244de1eb2d77d8ecaa992018414cb63bcdbc",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
             },
             "default-branch": true,
-            "type": "drupal-theme",
+            "type": "drupal-custom-theme",
             "license": [
                 "GPL-2.0+"
             ],
@@ -5217,7 +5217,32 @@
                 "source": "https://github.com/MachineVisionUiB/machine-vision-theme/tree/8.x-dev",
                 "issues": "https://github.com/MachineVisionUiB/machine-vision-theme/issues"
             },
-            "time": "2021-02-11T11:37:38+00:00"
+            "time": "2021-02-11T14:55:47+00:00"
+        },
+        {
+            "name": "machinevisionuib/machinevision_setup",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MachineVisionUiB/machinevision_setup.git",
+                "reference": "7501a7efe8a4e022cf2f412620cee194dc54b903"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MachineVisionUiB/machinevision_setup/zipball/7501a7efe8a4e022cf2f412620cee194dc54b903",
+                "reference": "7501a7efe8a4e022cf2f412620cee194dc54b903",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://github.com/MachineVisionUiB/machinevision_setup/tree/main",
+                "issues": "https://github.com/MachineVisionUiB/machinevision_setup/issues"
+            },
+            "time": "2021-02-11T15:41:48+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -8026,31 +8051,6 @@
                 "issues": "https://github.com/smbjorklund/elmcip_person/issues"
             },
             "time": "2020-09-08T08:26:45+00:00"
-        },
-        {
-            "name": "smbjorklund/machinevision_setup",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/smbjorklund/machinevision_setup.git",
-                "reference": "dec053c95534e58243775ff26700fdf19a20fee8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/smbjorklund/machinevision_setup/zipball/dec053c95534e58243775ff26700fdf19a20fee8",
-                "reference": "dec053c95534e58243775ff26700fdf19a20fee8",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "drupal-custom-module",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://github.com/smbjorklund/machinevision_setup/tree/main",
-                "issues": "https://github.com/smbjorklund/machinevision_setup/issues"
-            },
-            "time": "2020-11-16T17:50:21+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -11986,7 +11986,7 @@
     "stability-flags": {
         "drupal/config_split": 10,
         "machinevisionuib/machine-vision-theme": 20,
-        "smbjorklund/machinevision_setup": 20
+        "machinevisionuib/machinevision_setup": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
