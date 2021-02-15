@@ -158,22 +158,6 @@ third_party_settings:
                 type: basic_string
             additional: {  }
             weight: 8
-          858b70a0-decf-4530-a89c-cbb0c19075c9:
-            uuid: 858b70a0-decf-4530-a89c-cbb0c19075c9
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:person:field_record_status'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 9
           cbc75d49-66f5-429e-be94-f0a0805ae60d:
             uuid: cbc75d49-66f5-429e-be94-f0a0805ae60d
             region: content
@@ -312,4 +296,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  search_api_excerpt: true
