@@ -34,16 +34,6 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          1270f04c-ade8-4099-9a70-d3c98126b9a9:
-            uuid: 1270f04c-ade8-4099-9a70-d3c98126b9a9
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:person:links'
-            additional: {  }
-            weight: 0
           d1b77590-7e69-43bf-83e5-fb0a15a8e17d:
             uuid: d1b77590-7e69-43bf-83e5-fb0a15a8e17d
             region: content
@@ -173,6 +163,29 @@ third_party_settings:
                 type: basic_string
             additional: {  }
             weight: 10
+          edf2b0c2-5258-429d-95a2-d184710a5d96:
+            uuid: edf2b0c2-5258-429d-95a2-d184710a5d96
+            region: content
+            configuration:
+              id: 'views_block:work_by_person-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 7
+          1270f04c-ade8-4099-9a70-d3c98126b9a9:
+            uuid: 1270f04c-ade8-4099-9a70-d3c98126b9a9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:person:links'
+            additional: {  }
+            weight: 12
           f050adb0-4e1a-4ac1-b580-e26437d76e29:
             uuid: f050adb0-4e1a-4ac1-b580-e26437d76e29
             region: content
@@ -189,20 +202,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: comment_default
             additional: {  }
-            weight: 11
-          edf2b0c2-5258-429d-95a2-d184710a5d96:
-            uuid: edf2b0c2-5258-429d-95a2-d184710a5d96
-            region: content
-            configuration:
-              id: 'views_block:work_by_person-block_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 7
+            weight: 13
         third_party_settings: {  }
 id: node.person.default
 targetEntityType: node
