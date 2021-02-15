@@ -17,12 +17,14 @@ dependencies:
     - field.field.node.character.field_sexuality
     - field.field.node.character.field_species
     - node.type.character
+    - views.view.work_by_character
   module:
     - comment
     - layout_builder
     - layout_discovery
     - text
     - user
+    - views
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -140,7 +142,7 @@ third_party_settings:
                   link: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 3
+            weight: 5
           f8d4c683-8fa3-406d-8638-02e42ffaa517:
             uuid: f8d4c683-8fa3-406d-8638-02e42ffaa517
             region: first
@@ -208,7 +210,7 @@ third_party_settings:
                   link: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 2
+            weight: 4
           679cf042-a689-41f0-9f9a-66730a1ea5cf:
             uuid: 679cf042-a689-41f0-9f9a-66730a1ea5cf
             region: first
@@ -224,6 +226,32 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 11
+          b444c8fb-f58a-498e-aa0c-efa5a148eccf:
+            uuid: b444c8fb-f58a-498e-aa0c-efa5a148eccf
+            region: second
+            configuration:
+              id: 'views_block:work_by_character-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+          4ae240cb-dbb3-41cc-ba2d-e08f267ebd2b:
+            uuid: 4ae240cb-dbb3-41cc-ba2d-e08f267ebd2b
+            region: second
+            configuration:
+              id: 'views_block:work_by_character-block_2'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol

@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
-    - image.style.large
+    - image.style.article
     - media.type.image
   module:
-    - image
+    - svg_image
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -17,8 +17,12 @@ content:
     label: visually_hidden
     weight: 0
     settings:
-      image_style: large
+      image_style: article
       image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
     third_party_settings: {  }
     type: image
     region: content
