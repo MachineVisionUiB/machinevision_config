@@ -5195,12 +5195,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:MachineVisionUiB/machine-vision-theme.git",
-                "reference": "e3a84673f1197337352faae78418757ef10c451d"
+                "reference": "f7cd1d182f72fbb5cf9f8be03fcdc7b71c28df47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MachineVisionUiB/machine-vision-theme/zipball/e3a84673f1197337352faae78418757ef10c451d",
-                "reference": "e3a84673f1197337352faae78418757ef10c451d",
+                "url": "https://api.github.com/repos/MachineVisionUiB/machine-vision-theme/zipball/f7cd1d182f72fbb5cf9f8be03fcdc7b71c28df47",
+                "reference": "f7cd1d182f72fbb5cf9f8be03fcdc7b71c28df47",
                 "shasum": ""
             },
             "require": {
@@ -5217,7 +5217,7 @@
                 "source": "https://github.com/MachineVisionUiB/machine-vision-theme/tree/8.x-dev",
                 "issues": "https://github.com/MachineVisionUiB/machine-vision-theme/issues"
             },
-            "time": "2021-02-15T10:02:40+00:00"
+            "time": "2021-02-15T14:47:17+00:00"
         },
         {
             "name": "machinevisionuib/machinevision_setup",
