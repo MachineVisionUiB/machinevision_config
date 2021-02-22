@@ -1,0 +1,24 @@
+uuid: f4790bd9-894a-4f64-bcfc-ce7487b01535
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - machinevision
+id: pagetitle
+theme: machinevision
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /technologies-used
+    negate: false
