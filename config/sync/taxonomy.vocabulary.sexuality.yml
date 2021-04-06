@@ -2,7 +2,7 @@ uuid: 1ebbd4c1-74da-48e9-bcd5-0da1d2207fc3
 langcode: en
 status: true
 dependencies: {  }
-name: sexuality
+name: Sexuality
 vid: sexuality
 description: ''
 weight: 0

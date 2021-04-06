@@ -40,7 +40,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_autocomplete
     region: content
   field_comment:
     weight: 18
@@ -71,7 +71,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_autocomplete
     region: content
   field_image:
     type: media_library_widget
@@ -110,7 +110,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_autocomplete
     region: content
   field_sexuality:
     weight: 9
@@ -120,7 +120,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_autocomplete
     region: content
   field_species:
     weight: 5
@@ -130,7 +130,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path
@@ -172,9 +172,9 @@ content:
     weight: 12
     settings:
       match_operator: CONTAINS
+      match_limit: 3
       size: 60
       placeholder: ''
-      match_limit: 10
     region: content
     third_party_settings: {  }
   url_redirects:

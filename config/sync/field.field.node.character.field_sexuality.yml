@@ -11,8 +11,8 @@ field_name: field_sexuality
 entity_type: node
 bundle: character
 label: Sexuality
-description: 'If the character''s sexuality is clearly represented in the work, enter it (Lesbian, Bi-sexual, Gay, etc).'
-required: false
+description: 'If the character''s sexuality is clearly represented in the work, enter it (Homosexual, Heterosexual, Bi-sexual, Other). If the character''s sexuality is not addressed in the work enter Not specified. If you aren''t sure - for instance if someone else entered the work and you are checking the entry but haven''t seen the whole movie or played the whole game, enter "Missing data" to show that we don''t know. '
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
