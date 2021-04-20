@@ -11,7 +11,7 @@ field_name: field_race_ethnicity
 entity_type: node
 bundle: character
 label: Race/ethnicity
-description: 'Not specified, Asian, Black, Person of Colour, White, Immigrant, Indigenous, Multiple/Complex.'
+description: 'Not specified, Asian, Black, Person of Colour, White, Immigrant, Indigenous, Multiple/Complex, Unknown/Not applicable'
 required: false
 translatable: false
 default_value: {  }

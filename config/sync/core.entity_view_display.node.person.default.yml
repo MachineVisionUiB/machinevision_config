@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_middle_name
     - field.field.node.person.field_notes
-    - field.field.node.person.field_record_status
     - field.field.node.person.field_url
     - node.type.person
     - views.view.work_by_person
@@ -270,14 +269,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
-  field_record_status:
-    weight: 8
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_url:
     weight: 5

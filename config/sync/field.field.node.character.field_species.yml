@@ -11,8 +11,8 @@ field_name: field_species
 entity_type: node
 bundle: character
 label: Species
-description: 'Human, Animal, Machine, Cyborg, Fictional species.'
-required: false
+description: 'Human, Animal, Machine, Cyborg, Fictional species, Unknown/Not applicable.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

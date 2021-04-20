@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_middle_name
     - field.field.node.person.field_notes
-    - field.field.node.person.field_record_status
     - field.field.node.person.field_url
     - node.type.person
   module:
@@ -89,12 +88,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
-    region: content
-  field_record_status:
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_url:
     weight: 6

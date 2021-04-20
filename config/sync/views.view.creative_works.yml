@@ -1995,11 +1995,11 @@ display:
         block_1: '0'
       export_method: batch
       export_batch_size: 800
-      export_limit: 10
+      export_limit: 0
       pager:
         type: some
         options:
-          items_per_page: 10
+          items_per_page: 0
           offset: 0
       access:
         type: role
