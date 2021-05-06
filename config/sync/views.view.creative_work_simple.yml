@@ -1028,7 +1028,7 @@ display:
     display_options:
       display_extenders: {  }
       path: data/work/simplecsv
-      filename: 'work_only-[date:Y]'
+      filename: work_only-simpel
       automatic_download: false
       store_in_public_file_directory: null
       redirect_to_display: page_1
@@ -1107,7 +1107,6 @@ display:
           uses_fields: false
           formats:
             json: json
-            xml: xml
       defaults:
         style: false
         row: false
