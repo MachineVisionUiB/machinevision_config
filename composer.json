@@ -47,7 +47,7 @@
         "drupal/views_data_export": "^1.0",
         "drush/drush": "^10.2",
         "smbjorklund/elmcip_person": "^1.0",
-        "machinevisionuib/machine-vision-theme": "dev-8.x-dev",
+        "machinevisionuib/machine-vision-theme": "dev-main",
         "machinevisionuib/machinevision_setup": "dev-main"
     },
     "require-dev": {

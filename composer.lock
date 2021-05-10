@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4559af3b601a225ebcd0c86517214b80",
+    "content-hash": "8043d2d958b830d06ecbc2ba9fecffb5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3812,16 +3812,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "10.4.3",
+            "version": "10.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "472ce3e0ac48b418f8168a053b3bcb4c8582bf99"
+                "reference": "3fd9f7e62ffb7f221e4be8151a738529345d22d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/472ce3e0ac48b418f8168a053b3bcb4c8582bf99",
-                "reference": "472ce3e0ac48b418f8168a053b3bcb4c8582bf99",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/3fd9f7e62ffb7f221e4be8151a738529345d22d5",
+                "reference": "3fd9f7e62ffb7f221e4be8151a738529345d22d5",
                 "shasum": ""
             },
             "require": {
@@ -3945,7 +3945,7 @@
                 "irc": "irc://irc.freenode.org/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/10.4.3"
+                "source": "https://github.com/drush-ops/drush/tree/10.5.0"
             },
             "funding": [
                 {
@@ -3953,7 +3953,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-14T14:08:05+00:00"
+            "time": "2021-05-08T15:49:30+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -5283,7 +5283,7 @@
         },
         {
             "name": "machinevisionuib/machine-vision-theme",
-            "version": "dev-8.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:MachineVisionUiB/machine-vision-theme.git",
@@ -5306,7 +5306,7 @@
             "description": "Machine vision theme. Olivero subtheme",
             "homepage": "https://github.com/machinevisionuib/machine-vision-theme",
             "support": {
-                "source": "https://github.com/MachineVisionUiB/machine-vision-theme/tree/8.x-dev",
+                "source": "https://github.com/MachineVisionUiB/machine-vision-theme/tree/main",
                 "issues": "https://github.com/MachineVisionUiB/machine-vision-theme/issues"
             },
             "time": "2021-02-16T09:33:51+00:00"
