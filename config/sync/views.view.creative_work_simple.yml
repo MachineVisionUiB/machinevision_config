@@ -486,7 +486,7 @@ display:
             link: true
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -548,7 +548,7 @@ display:
           settings: {  }
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -611,7 +611,7 @@ display:
             link: true
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -673,7 +673,7 @@ display:
           settings: {  }
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -736,7 +736,7 @@ display:
             link: true
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -798,7 +798,7 @@ display:
           settings: {  }
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -861,7 +861,7 @@ display:
             link: true
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -923,7 +923,7 @@ display:
           settings: {  }
           group_column: target_id
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
