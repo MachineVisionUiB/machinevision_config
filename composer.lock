@@ -5317,12 +5317,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MachineVisionUiB/machinevision_setup.git",
-                "reference": "7501a7efe8a4e022cf2f412620cee194dc54b903"
+                "reference": "56b929bd7e3cc7ce0424315c43c9769810320b46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MachineVisionUiB/machinevision_setup/zipball/7501a7efe8a4e022cf2f412620cee194dc54b903",
-                "reference": "7501a7efe8a4e022cf2f412620cee194dc54b903",
+                "url": "https://api.github.com/repos/MachineVisionUiB/machinevision_setup/zipball/56b929bd7e3cc7ce0424315c43c9769810320b46",
+                "reference": "56b929bd7e3cc7ce0424315c43c9769810320b46",
                 "shasum": ""
             },
             "default-branch": true,
@@ -5334,7 +5334,7 @@
                 "source": "https://github.com/MachineVisionUiB/machinevision_setup/tree/main",
                 "issues": "https://github.com/MachineVisionUiB/machinevision_setup/issues"
             },
-            "time": "2021-02-11T15:41:48+00:00"
+            "time": "2021-05-10T15:20:49+00:00"
         },
         {
             "name": "masterminds/html5",
