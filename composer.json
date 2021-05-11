@@ -37,6 +37,7 @@
         "drupal/core-project-message": "^9.0.0",
         "drupal/core-recommended": "^9.0.0",
         "drupal/diff": "^1.0",
+        "drupal/entity_relationship_diagram": "^1.0",
         "drupal/facets": "^1.4",
         "drupal/inline_entity_form": "^1.0",
         "drupal/paragraphs": "^1.10",
@@ -46,9 +47,9 @@
         "drupal/svg_image": "^1.14",
         "drupal/views_data_export": "^1.0",
         "drush/drush": "^10.2",
-        "smbjorklund/elmcip_person": "^1.0",
         "machinevisionuib/machine-vision-theme": "dev-main",
-        "machinevisionuib/machinevision_setup": "dev-main"
+        "machinevisionuib/machinevision_setup": "dev-main",
+        "smbjorklund/elmcip_person": "^1.0"
     },
     "require-dev": {
         "drupal/devel": "^4.0",
