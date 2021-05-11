@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_pictograms
+    - system.menu.main
     - taxonomy.vocabulary.technologies
   module:
     - svg_image
@@ -698,6 +699,15 @@ display:
     display_options:
       display_extenders: {  }
       path: technologies-used
+      menu:
+        type: normal
+        title: 'Technologies used'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
