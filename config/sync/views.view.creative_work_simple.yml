@@ -94,6 +94,8 @@ display:
           columns:
             title: title
             nid: nid
+            field_publication_type: field_publication_type
+            field_publication_type_1: field_publication_type_1
             field_country: field_country
             field_year: field_year
             field_technologies_referenced: field_technologies_referenced
@@ -113,6 +115,20 @@ display:
               empty_column: false
               responsive: ''
             nid:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_publication_type:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_publication_type_1:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -1182,11 +1198,11 @@ display:
             encoding: utf8
             utf8_bom: '0'
             use_serializer_encode_only: false
-      export_limit: 20
+      export_limit: 0
       pager:
         type: some
         options:
-          items_per_page: 20
+          items_per_page: 0
           offset: 0
     cache_metadata:
       max-age: -1
