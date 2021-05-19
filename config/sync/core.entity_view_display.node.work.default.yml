@@ -253,21 +253,6 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 2
-          81c6a270-2433-43fc-bb96-9ea89aa1dc9e:
-            uuid: 81c6a270-2433-43fc-bb96-9ea89aa1dc9e
-            region: second
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:work:field_notes'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: basic_string
-            additional: {  }
-            weight: 6
           83a8ca05-4867-495b-9bf8-547d42f40a9d:
             uuid: 83a8ca05-4867-495b-9bf8-547d42f40a9d
             region: first
@@ -333,9 +318,53 @@ third_party_settings:
                 type: address_country_default
             additional: {  }
             weight: 7
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6527bbc3-fce4-4f47-a3ab-0376fb7b8c12:
+            uuid: 6527bbc3-fce4-4f47-a3ab-0376fb7b8c12
+            region: content
+            configuration:
+              id: 'field_block:node:work:field_comment'
+              label: Comment
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: comment_default
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          d64b9647-6575-4055-b51d-f594685cc3c2:
+            uuid: d64b9647-6575-4055-b51d-f594685cc3c2
+            region: content
+            configuration:
+              id: 'field_block:node:work:uuid'
+              label: 'Universally unique identifier'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: uuid
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
           b13f712d-ad11-487c-a2d6-e3887e435ae3:
             uuid: b13f712d-ad11-487c-a2d6-e3887e435ae3
-            region: second
+            region: content
             configuration:
               id: 'field_block:node:work:uid'
               label: 'Entered by'
@@ -351,28 +380,20 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 7
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          6527bbc3-fce4-4f47-a3ab-0376fb7b8c12:
-            uuid: 6527bbc3-fce4-4f47-a3ab-0376fb7b8c12
+            weight: 1
+          81c6a270-2433-43fc-bb96-9ea89aa1dc9e:
+            uuid: 81c6a270-2433-43fc-bb96-9ea89aa1dc9e
             region: content
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:work:field_comment'
+              id: 'field_block:node:work:field_notes'
               formatter:
                 label: above
-                settings:
-                  view_mode: default
-                  pager_id: 0
+                settings: {  }
                 third_party_settings: {  }
-                type: comment_default
+                type: basic_string
             additional: {  }
             weight: 0
         third_party_settings: {  }
@@ -546,3 +567,4 @@ content:
     third_party_settings: {  }
 hidden:
   search_api_excerpt: true
+  uuid: true

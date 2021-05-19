@@ -537,7 +537,7 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: standard
-      title: 'Technologies used'
+      title: Technologies
       header: {  }
       footer: {  }
       empty: {  }
@@ -698,10 +698,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: technologies-used
+      path: technologies
       menu:
         type: normal
-        title: 'Technologies used'
+        title: Technologies
         description: ''
         expanded: false
         parent: ''

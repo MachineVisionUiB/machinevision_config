@@ -45,6 +45,7 @@
         "drupal/redirect": "^1.6",
         "drupal/search_api": "^1.17",
         "drupal/svg_image": "^1.14",
+        "drupal/uuid_extra": "^2.0",
         "drupal/views_data_export": "^1.0",
         "drush/drush": "^10.2",
         "machinevisionuib/machine-vision-theme": "dev-main",

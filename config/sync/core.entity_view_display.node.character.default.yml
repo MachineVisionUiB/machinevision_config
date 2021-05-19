@@ -211,21 +211,6 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 4
-          679cf042-a689-41f0-9f9a-66730a1ea5cf:
-            uuid: 679cf042-a689-41f0-9f9a-66730a1ea5cf
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:character:field_optional_notes'
-              formatter:
-                label: inline
-                settings: {  }
-                third_party_settings: {  }
-                type: text_default
-            additional: {  }
-            weight: 11
           b444c8fb-f58a-498e-aa0c-efa5a148eccf:
             uuid: b444c8fb-f58a-498e-aa0c-efa5a148eccf
             region: second
@@ -274,7 +259,59 @@ third_party_settings:
                 third_party_settings: {  }
                 type: comment_default
             additional: {  }
+            weight: 15
+          679cf042-a689-41f0-9f9a-66730a1ea5cf:
+            uuid: 679cf042-a689-41f0-9f9a-66730a1ea5cf
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:character:field_optional_notes'
+              formatter:
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
             weight: 12
+          a4a95aa2-d2f1-420c-85d9-47807300ea4e:
+            uuid: a4a95aa2-d2f1-420c-85d9-47807300ea4e
+            region: content
+            configuration:
+              id: 'field_block:node:character:uid'
+              label: 'Authored by'
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 13
+          b2e46f3c-b60d-4f58-b247-ea13c9329c63:
+            uuid: b2e46f3c-b60d-4f58-b247-ea13c9329c63
+            region: content
+            configuration:
+              id: 'field_block:node:character:uuid'
+              label: UUID
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: uuid
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 14
         third_party_settings: {  }
 id: node.character.default
 targetEntityType: node
@@ -389,3 +426,4 @@ content:
     third_party_settings: {  }
 hidden:
   search_api_excerpt: true
+  uuid: true
