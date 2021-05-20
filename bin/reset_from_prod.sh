@@ -9,7 +9,7 @@ rsync -av mvision:/var/www/drupal/machinevision/latest.sql.gz /Users/steinmb/sit
 # Nuke old db. and import from prod. snapshot.
 cd /Users/steinmb/sites/machinevision/machinevision/web || exit
 ../vendor/bin/drush sql-drop --yes
-gunzip /Users/steinmb/sites/machinevision/latest.sql.gz
+gunzip --force /Users/steinmb/sites/machinevision/latest.sql.gz
 mysql mvisiond8 < ../../latest.sql
 
 # Clear caches and authenticate.
