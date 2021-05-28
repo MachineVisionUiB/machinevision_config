@@ -1,4 +1,4 @@
-uuid: 76522b6b-98fa-4166-92ff-dc2d2f12eb3e
+uuid: d67ab4ac-e408-4659-b7ac-bf16922b5d15
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
     - views.view.search
   module:
     - search_api
-id: sentiment
-name: Sentiment
-url_alias: sentiment
+id: technologies_referenced
+name: 'Technologies referenced'
+url_alias: technologies_referenced
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: field_sentiment
+field_identifier: field_technologies_referenced
 facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: links
@@ -23,9 +23,9 @@ widget:
     soft_limit_settings:
       show_less_label: 'Show less'
       show_more_label: 'Show more'
-    show_reset_link: true
+    show_reset_link: false
     reset_text: 'Show all'
-    hide_reset_when_no_selection: true
+    hide_reset_when_no_selection: false
 query_operator: and
 use_hierarchy: false
 keep_hierarchy_parents_active: false
@@ -62,12 +62,12 @@ processor_configs:
         condition: null
         values: ''
         negate: false
-      sexuality:
+      sentiment:
         enable: false
         condition: null
         values: ''
         negate: false
-      technologies_referenced:
+      sexuality:
         enable: false
         condition: null
         values: ''

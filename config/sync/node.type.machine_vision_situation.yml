@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Machine Vision Situation'
+name: Situation
 type: machine_vision_situation
 description: 'A specific situation in which machine vision is used in a game, artwork or narrative. '
 help: ''

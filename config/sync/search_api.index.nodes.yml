@@ -7,23 +7,36 @@ dependencies:
     - paragraphs
     - search_api
   config:
+    - field.storage.node.field_colours
     - field.storage.node.field_country
+    - field.storage.node.field_gender
     - field.storage.node.field_race_ethnicity
     - field.storage.node.field_science_fiction
     - field.storage.node.field_sentiment
     - field.storage.node.field_sexuality
     - field.storage.node.field_machine_vision_situation
     - field.storage.node.field_species
+    - field.storage.node.field_technologies_referenced
+    - field.storage.node.field_technologies_used
+    - field.storage.node.field_themes
     - field.storage.node.field_actions
     - field.storage.paragraph.field_verbs
     - field.storage.node.field_year
     - search_api.server.sql_database
     - core.entity_view_mode.node.search_index
 id: nodes
-name: Nodes
+name: 'MV records'
 description: ''
 read_only: false
 field_settings:
+  field_colours:
+    label: Colours
+    datasource_id: 'entity:node'
+    property_path: field_colours
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_colours
   field_country:
     label: Country
     datasource_id: 'entity:node'
@@ -32,6 +45,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_country
+  field_gender:
+    label: Gender
+    datasource_id: 'entity:node'
+    property_path: field_gender
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_gender
   field_machine_vision_situation:
     label: 'Situation machine vision is used in'
     datasource_id: 'entity:node'
@@ -80,8 +101,32 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_species
+  field_technologies_referenced:
+    label: 'Technologies referenced'
+    datasource_id: 'entity:node'
+    property_path: field_technologies_referenced
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_technologies_referenced
+  field_technologies_used:
+    label: 'Technologies used'
+    datasource_id: 'entity:node'
+    property_path: field_technologies_used
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_technologies_used
+  field_themes:
+    label: Topics
+    datasource_id: 'entity:node'
+    property_path: field_themes
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_themes
   field_verbs:
-    label: 'Who does what? » Paragraph » Is'
+    label: 'Who does what?'
     datasource_id: 'entity:node'
     property_path: 'field_actions:entity:field_verbs'
     type: integer
@@ -99,6 +144,13 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_year
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -113,6 +165,16 @@ field_settings:
           person: search_index
           platform_software: search_index
           work: search_index
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -129,6 +191,16 @@ field_settings:
     dependencies:
       module:
         - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
 datasource_settings:
   'entity:node':
     bundles:
@@ -141,6 +213,35 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_status: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: false
+    fields:
+      - rendered_item
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
   ignorecase:
     all_fields: false
     fields:
@@ -160,10 +261,54 @@ processor_settings:
     weights:
       preprocess_index: 0
       preprocess_query: 0
+  stopwords:
+    all_fields: false
+    fields:
+      - rendered_item
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
   tokenizer:
     all_fields: false
     fields:
       - rendered_item
+    ignored: ._-
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'

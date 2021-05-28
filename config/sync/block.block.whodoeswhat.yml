@@ -12,7 +12,7 @@ dependencies:
 id: whodoeswhat
 theme: machinevision
 region: sidebar
-weight: 0
+weight: -2
 provider: null
 plugin: 'facet_block:who_does_what_'
 settings:

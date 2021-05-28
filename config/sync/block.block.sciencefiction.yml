@@ -12,7 +12,7 @@ dependencies:
 id: sciencefiction
 theme: machinevision
 region: sidebar
-weight: -5
+weight: -10
 provider: null
 plugin: 'facet_block:science_fiction_'
 settings:

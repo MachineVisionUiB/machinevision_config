@@ -1,0 +1,23 @@
+uuid: 4fe7acb0-5a8c-46c3-915f-70245bbb892f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.race_ethnicity
+  module:
+    - facets
+  theme:
+    - machinevision
+id: raceethnicity
+theme: machinevision
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:race_ethnicity'
+settings:
+  id: 'facet_block:race_ethnicity'
+  label: Race/ethnicity
+  provider: facets
+  label_display: visible
+  block_id: raceethnicity
+visibility: {  }

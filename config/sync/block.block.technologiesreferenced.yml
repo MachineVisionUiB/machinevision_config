@@ -1,0 +1,23 @@
+uuid: 112c1471-abb1-41ec-a4aa-39bff5742be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.technologies_referenced
+  module:
+    - facets
+  theme:
+    - machinevision
+id: technologiesreferenced
+theme: machinevision
+region: sidebar
+weight: -4
+provider: null
+plugin: 'facet_block:technologies_referenced'
+settings:
+  id: 'facet_block:technologies_referenced'
+  label: 'Technologies referenced'
+  provider: facets
+  label_display: visible
+  block_id: technologiesreferenced
+visibility: {  }

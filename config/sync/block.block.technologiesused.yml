@@ -1,0 +1,23 @@
+uuid: 6dd06ee1-10cd-4560-8feb-e5e72558cda8
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.technologies_used
+  module:
+    - facets
+  theme:
+    - machinevision
+id: technologiesused
+theme: machinevision
+region: sidebar
+weight: -5
+provider: null
+plugin: 'facet_block:technologies_used'
+settings:
+  id: 'facet_block:technologies_used'
+  label: 'Technologies used'
+  provider: facets
+  label_display: visible
+  block_id: technologiesused
+visibility: {  }

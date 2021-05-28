@@ -12,7 +12,7 @@ dependencies:
 id: thischaracter
 theme: machinevision
 region: sidebar
-weight: 0
+weight: -3
 provider: null
 plugin: 'facet_block:this_character'
 settings:

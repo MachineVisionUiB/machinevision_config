@@ -1,0 +1,23 @@
+uuid: 25aa5484-932d-4b79-9eaa-235e6e0ccdb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.species
+  module:
+    - facets
+  theme:
+    - machinevision
+id: species
+theme: machinevision
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:species'
+settings:
+  id: 'facet_block:species'
+  label: Species
+  provider: facets
+  label_display: visible
+  block_id: species
+visibility: {  }

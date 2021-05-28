@@ -28,6 +28,7 @@ widget:
     hide_reset_when_no_selection: true
 query_operator: or
 use_hierarchy: false
+keep_hierarchy_parents_active: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
 hard_limit: 0
@@ -46,6 +47,36 @@ processor_configs:
       sort: 30
     settings:
       sort: DESC
+  dependent_processor:
+    processor_id: dependent_processor
+    weights:
+      build: 5
+    settings:
+      country:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
+      science_fiction_:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
+      sentiment:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
+      sexuality:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
+      type:
+        enable: true
+        condition: values
+        values: machine_vision_situation
+        negate: false
   display_value_widget_order:
     processor_id: display_value_widget_order
     weights:
