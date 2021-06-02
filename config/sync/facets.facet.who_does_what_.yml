@@ -19,14 +19,14 @@ widget:
   type: links
   config:
     show_numbers: true
-    soft_limit: 10
+    soft_limit: 5
     soft_limit_settings:
       show_less_label: 'Show less'
       show_more_label: 'Show more'
     show_reset_link: true
     reset_text: 'Show all'
     hide_reset_when_no_selection: true
-query_operator: or
+query_operator: and
 use_hierarchy: false
 keep_hierarchy_parents_active: false
 expand_hierarchy: false
@@ -52,6 +52,26 @@ processor_configs:
     weights:
       build: 5
     settings:
+      race_ethnicity:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
+      species:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
+      technologies_referenced:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
+      technologies_used:
+        enable: false
+        condition: null
+        values: ''
+        negate: false
       country:
         enable: false
         condition: null
