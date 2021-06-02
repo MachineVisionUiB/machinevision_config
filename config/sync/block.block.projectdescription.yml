@@ -1,0 +1,30 @@
+uuid: 92da0ed3-e54f-4480-95ec-a126b03596a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:branding:bf88cf85-7a4b-48d0-8736-73e4bcc98a5d'
+  module:
+    - block_content
+    - system
+  theme:
+    - machinevision
+id: projectdescription
+theme: machinevision
+region: content_above
+weight: 0
+provider: null
+plugin: 'block_content:bf88cf85-7a4b-48d0-8736-73e4bcc98a5d'
+settings:
+  id: 'block_content:bf88cf85-7a4b-48d0-8736-73e4bcc98a5d'
+  label: 'Project description'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
