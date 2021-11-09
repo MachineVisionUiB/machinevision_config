@@ -20,6 +20,7 @@ third_party_settings:
         layout_settings:
           label: ''
           column_widths: 33-67
+          context_mapping: {  }
         components:
           8ea44bb5-41f6-4ace-89d2-312284840f51:
             uuid: 8ea44bb5-41f6-4ace-89d2-312284840f51
@@ -111,3 +112,4 @@ content:
 hidden:
   member_for: true
   search_api_excerpt: true
+  uuid: true

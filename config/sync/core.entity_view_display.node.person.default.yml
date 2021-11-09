@@ -33,6 +33,7 @@ third_party_settings:
         layout_settings:
           label: ''
           column_widths: 33-67
+          context_mapping: {  }
         components:
           d1b77590-7e69-43bf-83e5-fb0a15a8e17d:
             uuid: d1b77590-7e69-43bf-83e5-fb0a15a8e17d
@@ -151,6 +152,7 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           cbc75d49-66f5-429e-be94-f0a0805ae60d:
             uuid: cbc75d49-66f5-429e-be94-f0a0805ae60d
