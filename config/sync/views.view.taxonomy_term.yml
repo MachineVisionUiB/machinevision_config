@@ -412,6 +412,7 @@ display:
           relationship: none
           view_mode: default
       display_extenders: {  }
+      enabled: false
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -906,3 +907,7 @@ display:
         - 'config:field.storage.node.field_gender'
         - 'config:field.storage.node.field_race_ethnicity'
         - 'config:field.storage.node.field_species'
+        - 'config_split_state:field.storage.node.field_age'
+        - 'config_split_state:field.storage.node.field_gender'
+        - 'config_split_state:field.storage.node.field_race_ethnicity'
+        - 'config_split_state:field.storage.node.field_species'
