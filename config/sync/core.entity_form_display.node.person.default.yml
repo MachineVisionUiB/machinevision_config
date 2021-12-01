@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.person.field_alias_or_pseudonym
-    - field.field.node.person.field_comment
     - field.field.node.person.field_country
     - field.field.node.person.field_editorial_notes
     - field.field.node.person.field_first_name
@@ -127,7 +126,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_comment: true
   promote: true
   sticky: true
   uuid: true

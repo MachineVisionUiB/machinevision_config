@@ -4,10 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.platform_software.body
-    - field.field.node.platform_software.field_comment
     - node.type.platform_software
   module:
-    - comment
     - path
     - text
 id: node.platform_software.default
@@ -31,12 +29,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_comment:
-    weight: 122
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
-    region: content
   path:
     type: path
     weight: 30
@@ -82,4 +74,10 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  uuid: true

@@ -1,8 +1,0 @@
-uuid: 9d2991ab-f398-4130-9dce-51dfd6f2eb68
-langcode: en
-status: true
-dependencies: {  }
-id: comments
-label: Comments
-target_entity_type_id: node
-description: 'Generic comments'

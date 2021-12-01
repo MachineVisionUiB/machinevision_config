@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.machine_vision_situation.field_actions
     - field.field.node.machine_vision_situation.field_colours
-    - field.field.node.machine_vision_situation.field_comment
     - field.field.node.machine_vision_situation.field_machine_p_o_v
     - field.field.node.machine_vision_situation.field_media_asset
     - field.field.node.machine_vision_situation.field_multi_image
@@ -16,7 +15,6 @@ dependencies:
     - field.field.node.machine_vision_situation.field_visual_characteristics
     - node.type.machine_vision_situation
   module:
-    - comment
     - media_library
     - paragraphs
     - path
@@ -53,12 +51,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
-    region: content
-  field_comment:
-    weight: 17
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_machine_p_o_v:
     weight: 8
@@ -171,4 +163,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  uuid: true

@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.machine_vision_situation.field_actions
     - field.field.node.machine_vision_situation.field_colours
-    - field.field.node.machine_vision_situation.field_comment
     - field.field.node.machine_vision_situation.field_machine_p_o_v
     - field.field.node.machine_vision_situation.field_media_asset
     - field.field.node.machine_vision_situation.field_multi_image
@@ -31,7 +30,6 @@ content:
 hidden:
   field_actions: true
   field_colours: true
-  field_comment: true
   field_machine_p_o_v: true
   field_media_asset: true
   field_multi_image: true
@@ -40,3 +38,5 @@ hidden:
   field_record_status: true
   field_textfield: true
   field_visual_characteristics: true
+  search_api_excerpt: true
+  uuid: true

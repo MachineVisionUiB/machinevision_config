@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.platform_software.body
-    - field.field.node.platform_software.field_comment
     - node.type.platform_software
   module:
     - text
@@ -29,4 +28,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_comment: true
+  search_api_excerpt: true
+  uuid: true

@@ -3,10 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comments.default
     - field.field.node.machine_vision_situation.field_actions
     - field.field.node.machine_vision_situation.field_colours
-    - field.field.node.machine_vision_situation.field_comment
     - field.field.node.machine_vision_situation.field_machine_p_o_v
     - field.field.node.machine_vision_situation.field_media_asset
     - field.field.node.machine_vision_situation.field_multi_image
@@ -18,7 +16,6 @@ dependencies:
     - node.type.machine_vision_situation
     - views.view.work_used_by_situation
   module:
-    - comment
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
@@ -215,23 +212,6 @@ third_party_settings:
           label: ''
           context_mapping: {  }
         components:
-          aa1c51d6-1e39-4d58-98c4-264eeb21705a:
-            uuid: aa1c51d6-1e39-4d58-98c4-264eeb21705a
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:machine_vision_situation:field_comment'
-              formatter:
-                label: above
-                settings:
-                  view_mode: default
-                  pager_id: 0
-                third_party_settings: {  }
-                type: comment_default
-            additional: {  }
-            weight: 5
           d16d1520-c4d9-4c79-9395-2b56bc8e422e:
             uuid: d16d1520-c4d9-4c79-9395-2b56bc8e422e
             region: content
@@ -306,15 +286,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_comment:
-    weight: 11
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_machine_p_o_v:
     weight: 5

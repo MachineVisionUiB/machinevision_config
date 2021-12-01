@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.work.field_author_name
     - field.field.node.work.field_characters
-    - field.field.node.work.field_comment
     - field.field.node.work.field_country
     - field.field.node.work.field_machine_vision_situation
     - field.field.node.work.field_media_asset
@@ -25,7 +24,6 @@ dependencies:
     - node.type.work
   module:
     - address
-    - comment
     - datetime
     - link
     - media_library
@@ -61,12 +59,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_comment:
-    weight: 26
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_country:
     weight: 10
@@ -229,4 +221,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  uuid: true

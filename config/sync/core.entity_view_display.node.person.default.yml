@@ -3,9 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comments.default
     - field.field.node.person.field_alias_or_pseudonym
-    - field.field.node.person.field_comment
     - field.field.node.person.field_country
     - field.field.node.person.field_editorial_notes
     - field.field.node.person.field_first_name
@@ -17,7 +15,6 @@ dependencies:
     - views.view.work_by_person
   module:
     - address
-    - comment
     - layout_builder
     - layout_discovery
     - link
@@ -206,23 +203,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 17
-          f050adb0-4e1a-4ac1-b580-e26437d76e29:
-            uuid: f050adb0-4e1a-4ac1-b580-e26437d76e29
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:person:field_comment'
-              formatter:
-                label: above
-                settings:
-                  view_mode: default
-                  pager_id: 0
-                third_party_settings: {  }
-                type: comment_default
-            additional: {  }
-            weight: 18
           804ae186-ca2f-4de1-9477-635323785a13:
             uuid: 804ae186-ca2f-4de1-9477-635323785a13
             region: content
@@ -254,15 +234,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_comment:
-    weight: 10
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_country:
     weight: 6

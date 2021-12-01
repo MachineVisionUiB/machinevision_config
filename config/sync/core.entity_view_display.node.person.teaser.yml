@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.person.field_alias_or_pseudonym
-    - field.field.node.person.field_comment
     - field.field.node.person.field_country
     - field.field.node.person.field_editorial_notes
     - field.field.node.person.field_first_name
@@ -28,7 +27,6 @@ content:
     region: content
 hidden:
   field_alias_or_pseudonym: true
-  field_comment: true
   field_country: true
   field_editorial_notes: true
   field_first_name: true
@@ -37,3 +35,4 @@ hidden:
   field_notes: true
   field_url: true
   search_api_excerpt: true
+  uuid: true
