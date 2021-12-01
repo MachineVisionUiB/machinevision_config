@@ -332,7 +332,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Publication Type'
+          label: Genre
           exclude: false
           alter:
             alter_text: false
@@ -395,7 +395,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Publication Type ID'
+          label: 'Genre ID'
           exclude: false
           alter:
             alter_text: false
