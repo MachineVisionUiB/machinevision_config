@@ -1436,7 +1436,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Creative work wide v2'
+      title: 'Creative work long v2'
       header:
         result:
           id: result
@@ -2687,6 +2687,8 @@ display:
           plugin_id: field
       defaults:
         fields: false
+        title: false
+      title: 'Creative work wide v2'
     cache_metadata:
       max-age: -1
       contexts:
@@ -3877,6 +3879,8 @@ display:
           plugin_id: field
       defaults:
         fields: false
+        title: false
+      title: 'Creative work wide v2'
     cache_metadata:
       max-age: -1
       contexts:
