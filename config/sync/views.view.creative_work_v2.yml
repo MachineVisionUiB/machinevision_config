@@ -530,8 +530,8 @@ display:
           label: 'Genre ID'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_publication_type_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -655,8 +655,8 @@ display:
           label: 'Technologies referenced id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_technologies_referenced_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -780,8 +780,8 @@ display:
           label: 'Technologies used id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_technologies_used_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -905,8 +905,8 @@ display:
           label: 'Topic id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_themes_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -1030,8 +1030,8 @@ display:
           label: 'Sentiment id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_sentiment_1__target_id }} '
             make_link: false
             path: ''
             absolute: false
@@ -1472,15 +1472,6 @@ display:
         - 'config:field.storage.node.field_technologies_used'
         - 'config:field.storage.node.field_themes'
         - 'config:field.storage.node.field_year'
-        - 'config_split_state:field.storage.node.field_characters'
-        - 'config_split_state:field.storage.node.field_country'
-        - 'config_split_state:field.storage.node.field_machine_vision_situation'
-        - 'config_split_state:field.storage.node.field_publication_type'
-        - 'config_split_state:field.storage.node.field_sentiment'
-        - 'config_split_state:field.storage.node.field_technologies_referenced'
-        - 'config_split_state:field.storage.node.field_technologies_used'
-        - 'config_split_state:field.storage.node.field_themes'
-        - 'config_split_state:field.storage.node.field_year'
   data_export_1:
     display_plugin: data_export
     id: data_export_1
@@ -1542,15 +1533,6 @@ display:
         - 'config:field.storage.node.field_technologies_used'
         - 'config:field.storage.node.field_themes'
         - 'config:field.storage.node.field_year'
-        - 'config_split_state:field.storage.node.field_characters'
-        - 'config_split_state:field.storage.node.field_country'
-        - 'config_split_state:field.storage.node.field_machine_vision_situation'
-        - 'config_split_state:field.storage.node.field_publication_type'
-        - 'config_split_state:field.storage.node.field_sentiment'
-        - 'config_split_state:field.storage.node.field_technologies_referenced'
-        - 'config_split_state:field.storage.node.field_technologies_used'
-        - 'config_split_state:field.storage.node.field_themes'
-        - 'config_split_state:field.storage.node.field_year'
   data_export_2:
     display_plugin: data_export
     id: data_export_2
@@ -2724,15 +2706,6 @@ display:
         - 'config:field.storage.node.field_technologies_used'
         - 'config:field.storage.node.field_themes'
         - 'config:field.storage.node.field_year'
-        - 'config_split_state:field.storage.node.field_characters'
-        - 'config_split_state:field.storage.node.field_country'
-        - 'config_split_state:field.storage.node.field_machine_vision_situation'
-        - 'config_split_state:field.storage.node.field_publication_type'
-        - 'config_split_state:field.storage.node.field_sentiment'
-        - 'config_split_state:field.storage.node.field_technologies_referenced'
-        - 'config_split_state:field.storage.node.field_technologies_used'
-        - 'config_split_state:field.storage.node.field_themes'
-        - 'config_split_state:field.storage.node.field_year'
   page_1:
     display_plugin: page
     id: page_1
@@ -2760,15 +2733,6 @@ display:
         - 'config:field.storage.node.field_technologies_used'
         - 'config:field.storage.node.field_themes'
         - 'config:field.storage.node.field_year'
-        - 'config_split_state:field.storage.node.field_characters'
-        - 'config_split_state:field.storage.node.field_country'
-        - 'config_split_state:field.storage.node.field_machine_vision_situation'
-        - 'config_split_state:field.storage.node.field_publication_type'
-        - 'config_split_state:field.storage.node.field_sentiment'
-        - 'config_split_state:field.storage.node.field_technologies_referenced'
-        - 'config_split_state:field.storage.node.field_technologies_used'
-        - 'config_split_state:field.storage.node.field_themes'
-        - 'config_split_state:field.storage.node.field_year'
   page_2:
     display_plugin: page
     id: page_2
@@ -3109,8 +3073,8 @@ display:
           label: 'Genre ID'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_publication_type_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -3234,8 +3198,8 @@ display:
           label: 'Technologies referenced id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_technologies_referenced_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -3359,8 +3323,8 @@ display:
           label: 'Technologies used id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_technologies_used_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -3484,8 +3448,8 @@ display:
           label: 'Topic id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_themes_1__target_id }}'
             make_link: false
             path: ''
             absolute: false
@@ -3609,8 +3573,8 @@ display:
           label: 'Sentiment id'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '2000{{ field_sentiment_1__target_id }} '
             make_link: false
             path: ''
             absolute: false
@@ -3932,12 +3896,3 @@ display:
         - 'config:field.storage.node.field_technologies_used'
         - 'config:field.storage.node.field_themes'
         - 'config:field.storage.node.field_year'
-        - 'config_split_state:field.storage.node.field_characters'
-        - 'config_split_state:field.storage.node.field_country'
-        - 'config_split_state:field.storage.node.field_machine_vision_situation'
-        - 'config_split_state:field.storage.node.field_publication_type'
-        - 'config_split_state:field.storage.node.field_sentiment'
-        - 'config_split_state:field.storage.node.field_technologies_referenced'
-        - 'config_split_state:field.storage.node.field_technologies_used'
-        - 'config_split_state:field.storage.node.field_themes'
-        - 'config_split_state:field.storage.node.field_year'
