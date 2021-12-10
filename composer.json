@@ -44,6 +44,7 @@
         "drupal/paragraphs": "^1.10",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
+        "drupal/restui": "^1.20",
         "drupal/search_api": "^1.17",
         "drupal/svg_image": "^1.14",
         "drupal/uuid_extra": "^2.0",
