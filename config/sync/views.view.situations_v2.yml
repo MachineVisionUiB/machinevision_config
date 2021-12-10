@@ -1818,6 +1818,20 @@ display:
         page_2: '0'
       export_method: batch
       export_batch_size: 1000
+      style:
+        type: data_export
+        options:
+          formats:
+            csv: csv
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
     cache_metadata:
       max-age: -1
       contexts:
