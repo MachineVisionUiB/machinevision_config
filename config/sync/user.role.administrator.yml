@@ -39,6 +39,7 @@ permissions:
   - 'administer menu'
   - 'administer module filter'
   - 'administer pathauto'
+  - 'administer rest resources'
   - 'administer shortcuts'
   - 'administer site configuration'
   - 'administer url aliases'
