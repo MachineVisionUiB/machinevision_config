@@ -858,7 +858,7 @@ display:
           id: field_publication_type_target_id
           table: node__field_publication_type
           field: field_publication_type_target_id
-          relationship: none
+          relationship: reverse__node__field_machine_vision_situation
           group_type: group
           admin_label: ''
           operator: or
