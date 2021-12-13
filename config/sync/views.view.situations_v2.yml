@@ -785,7 +785,7 @@ display:
           relationship: field_actions
           group_type: group
           admin_label: ''
-          label: Is
+          label: 'Verb ID'
           exclude: false
           alter:
             alter_text: true
@@ -858,7 +858,7 @@ display:
           id: field_publication_type_target_id
           table: node__field_publication_type
           field: field_publication_type_target_id
-          relationship: reverse__node__field_machine_vision_situation
+          relationship: none
           group_type: group
           admin_label: ''
           operator: or
@@ -1428,7 +1428,7 @@ display:
             link: true
           group_column: target_id
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -1490,7 +1490,7 @@ display:
           settings: {  }
           group_column: target_id
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -1694,7 +1694,7 @@ display:
           relationship: field_actions
           group_type: group
           admin_label: ''
-          label: Is
+          label: 'Verb ID'
           exclude: false
           alter:
             alter_text: true
@@ -2323,7 +2323,7 @@ display:
             link: true
           group_column: target_id
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -2385,7 +2385,7 @@ display:
           settings: {  }
           group_column: target_id
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -2589,7 +2589,7 @@ display:
           relationship: field_actions
           group_type: group
           admin_label: ''
-          label: Is
+          label: 'Verb ID'
           exclude: false
           alter:
             alter_text: true
