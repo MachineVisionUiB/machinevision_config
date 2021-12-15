@@ -3928,6 +3928,11 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: true
             offset_label: offset
+      style:
+        type: serializer
+        options:
+          uses_fields: false
+          formats: {  }
     cache_metadata:
       max-age: -1
       contexts:
