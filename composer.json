@@ -36,6 +36,7 @@
         "drupal/core-dev": "^9.0",
         "drupal/core-project-message": "^9.0.0",
         "drupal/core-recommended": "^9.0.0",
+        "drupal/csv_serialization": "^2.0",
         "drupal/diff": "^1.0",
         "drupal/entity_relationship_diagram": "^1.0",
         "drupal/facets": "^1.4",
