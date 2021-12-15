@@ -1479,15 +1479,15 @@ display:
     position: 3
     display_options:
       display_extenders: {  }
-      path: data/work/long/v2
+      path: data/work/long/v2/export
       filename: work_long_v2
       automatic_download: false
-      store_in_public_file_directory: false
+      store_in_public_file_directory: null
       redirect_to_display: page_1
       custom_redirect_path: false
       include_query_params: true
       export_method: batch
-      export_batch_size: 1000
+      export_batch_size: 100
       auth:
         - cookie
       displays:
@@ -1544,10 +1544,10 @@ display:
         page_2: page_2
         default: '0'
         page_1: '0'
-      path: data/work/wide/v2
+      path: data/work/wide/v2/export
       filename: work_wide_v2
       automatic_download: false
-      store_in_public_file_directory: false
+      store_in_public_file_directory: null
       redirect_to_display: page_2
       custom_redirect_path: false
       include_query_params: true
@@ -1569,7 +1569,7 @@ display:
       auth:
         - cookie
       export_method: batch
-      export_batch_size: 1000
+      export_batch_size: 100
       fields:
         title:
           id: title
@@ -2715,7 +2715,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: data/creative-work-long_v2
+      path: data/work/long/v2
     cache_metadata:
       max-age: -1
       contexts:
@@ -2742,7 +2742,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: data/creative-work-wide_v2
+      path: data/work/wide/v2
       display_description: ''
       fields:
         title:
@@ -3886,6 +3886,54 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_characters'
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_machine_vision_situation'
+        - 'config:field.storage.node.field_publication_type'
+        - 'config:field.storage.node.field_sentiment'
+        - 'config:field.storage.node.field_technologies_referenced'
+        - 'config:field.storage.node.field_technologies_used'
+        - 'config:field.storage.node.field_themes'
+        - 'config:field.storage.node.field_year'
+  rest_export_1:
+    display_plugin: rest_export
+    id: rest_export_1
+    display_title: 'REST export'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: data/work/long/v2/rest
+      auth:
+        - cookie
+      pager:
+        type: mini
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page: true
+            items_per_page_label: Items
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: true
+            offset_label: offset
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
         - url.query_args
         - user
         - 'user.node_grants:view'
