@@ -28,7 +28,7 @@ dependencies:
     - user
     - views_data_export
 id: narrative_genres_v2
-label: 'Narrative genres v2'
+label: 'Narrative genres V2'
 module: views
 description: 'Lists genres of Creative Works that have been classified as Narratives.'
 tag: ''
