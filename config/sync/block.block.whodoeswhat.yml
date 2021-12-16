@@ -18,11 +18,11 @@ plugin: 'facet_block:who_does_what_'
 settings:
   id: 'facet_block:who_does_what_'
   label: 'Who does what?'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: whodoeswhat
 visibility:
   request_path:
     id: request_path
-    pages: "/search\r\n/search/*"
     negate: false
+    pages: "/search\r\n/search/*"

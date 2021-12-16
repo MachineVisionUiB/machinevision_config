@@ -21,9 +21,9 @@ bundle: person
 mode: teaser
 content:
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_alias_or_pseudonym: true

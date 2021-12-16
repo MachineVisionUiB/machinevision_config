@@ -18,11 +18,11 @@ plugin: 'facet_block:this_character'
 settings:
   id: 'facet_block:this_character'
   label: 'This character'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: thischaracter
 visibility:
   request_path:
     id: request_path
-    pages: "/search_action\r\n/search_action/*"
     negate: false
+    pages: "/search_action\r\n/search_action/*"

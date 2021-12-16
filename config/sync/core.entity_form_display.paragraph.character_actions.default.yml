@@ -12,25 +12,25 @@ bundle: character_actions
 mode: default
 content:
   field_character:
-    weight: 0
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
     type: entity_reference_autocomplete
+    weight: 0
     region: content
-  field_verbs:
-    weight: 1
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_verbs:
     type: entity_reference_autocomplete_tags
+    weight: 1
     region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

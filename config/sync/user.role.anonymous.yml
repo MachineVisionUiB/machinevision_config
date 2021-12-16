@@ -1,7 +1,9 @@
 uuid: 4e76d5ca-413c-4aae-aed5-133f15fe6c4e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -10,9 +12,3 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
-  - 'access site-wide contact form'
-  - 'diff view changes'
-  - 'search content'
-  - 'view field_teacher_link'
-  - 'view files'
-  - 'view own field_teacher_link'

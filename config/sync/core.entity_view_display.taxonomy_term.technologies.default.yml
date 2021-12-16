@@ -14,20 +14,20 @@ bundle: technologies
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_pictograms:
-    weight: 1
+    type: image
     label: visually_hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
 hidden:
   search_api_excerpt: true

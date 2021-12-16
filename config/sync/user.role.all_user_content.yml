@@ -1,7 +1,19 @@
 uuid: a58fa020-812e-4da2-8ea1-28fcf6462201
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.landing_page
+  module:
+    - file
+    - media
+    - node
+    - system
 id: all_user_content
 label: 'All user content'
 weight: 2

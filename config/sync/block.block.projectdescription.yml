@@ -18,13 +18,13 @@ plugin: 'block_content:bf88cf85-7a4b-48d0-8736-73e4bcc98a5d'
 settings:
   id: 'block_content:bf88cf85-7a4b-48d0-8736-73e4bcc98a5d'
   label: 'Project description'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

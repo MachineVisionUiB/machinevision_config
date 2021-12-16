@@ -11,16 +11,16 @@ pattern: '[node:content-type]/[node:title]'
 selection_criteria:
   cf3d5026-44c1-4df6-8fec-98c6faeace54:
     id: node_type
+    negate: false
+    uuid: cf3d5026-44c1-4df6-8fec-98c6faeace54
+    context_mapping:
+      node: node
     bundles:
       character: character
       machine_vision_situation: machine_vision_situation
       person: person
       platform_software: platform_software
       work: work
-    negate: false
-    context_mapping:
-      node: node
-    uuid: cf3d5026-44c1-4df6-8fec-98c6faeace54
 selection_logic: and
 weight: -5
 relationships: {  }

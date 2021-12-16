@@ -12,21 +12,21 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: media.image.article
 targetEntityType: media
 bundle: image
 mode: article
 content:
   field_media_image:
-    label: visually_hidden
-    weight: 0
-    settings:
-      image_style: article
-      image_link: file
-    third_party_settings: {  }
     type: image
+    label: visually_hidden
+    settings:
+      image_link: file
+      image_style: article
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

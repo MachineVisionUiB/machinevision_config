@@ -5,11 +5,11 @@ dependencies: {  }
 id: config_dev
 label: 'Develop configuration'
 description: 'Custom modules, settings used in dev.'
+weight: 0
 storage: folder
 folder: ../config/dev
 module:
   devel: 0
 theme: {  }
-weight: 0
 complete_list: {  }
 partial_list: {  }

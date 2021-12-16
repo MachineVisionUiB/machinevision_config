@@ -68,25 +68,28 @@ processor_settings:
   add_url: {  }
   aggregated_field: {  }
   ignorecase:
-    all_fields: false
-    fields:
-      - type
     weights:
       preprocess_index: -20
       preprocess_query: -20
+    all_fields: false
+    fields:
+      - type
   language_with_fallback: {  }
   rendered_item: {  }
   reverse_entity_references: {  }
   stemmer:
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
     all_fields: true
     fields: {  }
     exceptions:
       mexican: mexic
       texan: texa
-    weights:
-      preprocess_index: 0
-      preprocess_query: 0
   stopwords:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
     all_fields: false
     fields: {  }
     stopwords:
@@ -125,23 +128,20 @@ processor_settings:
       - was
       - will
       - with
-    weights:
-      preprocess_index: -5
-      preprocess_query: -2
   tokenizer:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
     all_fields: true
     fields: {  }
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
-    weights:
-      preprocess_index: -6
-      preprocess_query: -6
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
   track_changes_in_references: true
 server: sql_database

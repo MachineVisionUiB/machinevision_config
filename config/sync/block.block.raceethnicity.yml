@@ -18,11 +18,11 @@ plugin: 'facet_block:race_ethnicity'
 settings:
   id: 'facet_block:race_ethnicity'
   label: Race/ethnicity
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: raceethnicity
 visibility:
   request_path:
     id: request_path
-    pages: "/search\r\n/search/*"
     negate: false
+    pages: "/search\r\n/search/*"

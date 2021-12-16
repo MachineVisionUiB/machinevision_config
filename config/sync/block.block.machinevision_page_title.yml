@@ -17,17 +17,17 @@ plugin: page_title_block
 settings:
   id: page_title_block
   label: 'Page title'
-  provider: core
   label_display: '0'
+  provider: core
 visibility:
-  node_type:
-    id: node_type
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
     bundles:
       character: character
       machine_vision_situation: machine_vision_situation
       person: person
       platform_software: platform_software
       work: work
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
