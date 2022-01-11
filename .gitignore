@@ -24,3 +24,6 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore services settings.
+web/sites/default/services.yml
