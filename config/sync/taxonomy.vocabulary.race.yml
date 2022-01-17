@@ -2,7 +2,7 @@ uuid: 440a71e8-eb16-49d3-8b99-d6f33f989c4d
 langcode: en
 status: true
 dependencies: {  }
-name: Race/ethnicity
+name: RaceEthnicity
 vid: race
 description: 'The representation of a character''s skin colour, race, ethnicity or related characteristics. Only tag as represented in the wor '
 weight: 0
