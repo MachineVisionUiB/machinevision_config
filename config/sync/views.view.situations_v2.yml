@@ -21,6 +21,7 @@ dependencies:
     - serialization
     - taxonomy
     - user
+    - uuid_extra
     - views_data_export
 id: situations_v2
 label: 'Situations V2'
@@ -912,6 +913,129 @@ display:
           error_message: true
       style:
         type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            title: title
+            nid: nid
+            field_publication_type: field_publication_type
+            field_publication_type_1: field_publication_type_1
+            field_character: field_character
+            field_character_1: field_character_1
+            field_generic_entity_thing: field_generic_entity_thing
+            field_generic_entity_thing_1: field_generic_entity_thing_1
+            field_technology: field_technology
+            field_technology_1: field_technology_1
+            field_verbs: field_verbs
+            field_verbs_1: field_verbs_1
+            tid: tid
+            uuid: uuid
+          default: '-1'
+          info:
+            title:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nid:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_publication_type:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_publication_type_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_character:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_character_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_generic_entity_thing:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_generic_entity_thing_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_technology:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_technology_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_verbs:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_verbs_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            tid:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            uuid:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
       row:
         type: fields
       query:
@@ -951,6 +1075,15 @@ display:
           admin_label: field_character
           entity_type: node
           plugin_id: entity_reverse
+          required: false
+        field_verbs:
+          id: field_verbs
+          table: paragraph__field_verbs
+          field: field_verbs
+          relationship: field_actions
+          group_type: group
+          admin_label: 'field_verbs: Taxonomy term'
+          plugin_id: standard
           required: false
       header:
         result:
@@ -1619,14 +1752,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_verbs:
-          id: field_verbs
-          table: paragraph__field_verbs
-          field: field_verbs
-          relationship: field_actions
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_verbs
           group_type: group
           admin_label: ''
-          plugin_id: field
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: Verb
           exclude: false
           alter:
@@ -1668,13 +1803,13 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: true
-          group_column: target_id
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -1682,19 +1817,22 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_verbs_1:
-          id: field_verbs_1
-          table: paragraph__field_verbs
-          field: field_verbs
-          relationship: field_actions
+          convert_spaces: false
+        tid:
+          id: tid
+          table: taxonomy_term_field_data
+          field: tid
+          relationship: field_verbs
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: tid
           plugin_id: field
           label: 'Verb ID'
           exclude: false
           alter:
-            alter_text: true
-            text: '2000{{ field_verbs_1__target_id }}'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -1731,12 +1869,78 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_id
-          settings: {  }
-          group_column: target_id
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
           group_columns: {  }
-          group_rows: false
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        uuid:
+          id: uuid
+          table: taxonomy_term_data
+          field: uuid
+          relationship: field_verbs
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: uuid
+          plugin_id: field
+          label: UUID
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: uuid
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -1773,7 +1977,7 @@ display:
       filename: sitiuations_long_v2
       automatic_download: false
       export_method: batch
-      export_batch_size: 1000
+      export_batch_size: 100
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: page_2
@@ -1792,7 +1996,6 @@ display:
         - 'config:field.storage.paragraph.field_character'
         - 'config:field.storage.paragraph.field_generic_entity_thing'
         - 'config:field.storage.paragraph.field_technology'
-        - 'config:field.storage.paragraph.field_verbs'
   data_export_2:
     id: data_export_2
     display_title: 'Data export wide'
@@ -1828,7 +2031,7 @@ display:
       filename: sitiuations_wide_v2
       automatic_download: false
       export_method: batch
-      export_batch_size: 1000
+      export_batch_size: 100
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: page_1
@@ -2514,14 +2717,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_verbs:
-          id: field_verbs
-          table: paragraph__field_verbs
-          field: field_verbs
-          relationship: field_actions
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_verbs
           group_type: group
           admin_label: ''
-          plugin_id: field
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: Verb
           exclude: false
           alter:
@@ -2563,13 +2768,13 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: true
-          group_column: target_id
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
-          group_rows: false
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -2577,19 +2782,22 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_verbs_1:
-          id: field_verbs_1
-          table: paragraph__field_verbs
-          field: field_verbs
-          relationship: field_actions
+          convert_spaces: false
+        tid:
+          id: tid
+          table: taxonomy_term_field_data
+          field: tid
+          relationship: field_verbs
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: tid
           plugin_id: field
           label: 'Verb ID'
           exclude: false
           alter:
-            alter_text: true
-            text: '2000{{ field_verbs_1__target_id }}'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -2626,12 +2834,78 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_id
-          settings: {  }
-          group_column: target_id
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
           group_columns: {  }
-          group_rows: false
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        uuid:
+          id: uuid
+          table: taxonomy_term_data
+          field: uuid
+          relationship: field_verbs
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: uuid
+          plugin_id: field
+          label: UUID
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: uuid
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -2659,7 +2933,6 @@ display:
         - 'config:field.storage.paragraph.field_character'
         - 'config:field.storage.paragraph.field_generic_entity_thing'
         - 'config:field.storage.paragraph.field_technology'
-        - 'config:field.storage.paragraph.field_verbs'
   rest_export_1:
     id: rest_export_1
     display_title: 'REST export'
