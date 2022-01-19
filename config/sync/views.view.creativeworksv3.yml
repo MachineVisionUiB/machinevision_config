@@ -1463,7 +1463,7 @@ display:
       displays:
         page_1: page_1
         default: '0'
-      filename: work_long_v2
+      filename: creativeworks_long
       automatic_download: false
       export_method: batch
       export_batch_size: 100
@@ -2632,14 +2632,14 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: data/work/v2/wide/export
+      path: data/work/v3/wide/export
       auth:
         - cookie
       displays:
         page_2: page_2
         default: '0'
         page_1: '0'
-      filename: work_wide_v2
+      filename: creativeworks_wide
       automatic_download: false
       export_method: batch
       export_batch_size: 100
@@ -2673,7 +2673,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: data/work/v2/long
+      path: data/work/v3/long
     cache_metadata:
       max-age: -1
       contexts:
@@ -3838,7 +3838,7 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: data/work/v2/wide
+      path: data/work/v3/wide
     cache_metadata:
       max-age: -1
       contexts:
@@ -3888,7 +3888,7 @@ display:
           uses_fields: false
           formats: {  }
       display_extenders: {  }
-      path: data/work/v2/long/rest
+      path: data/work/v3/long/rest
       auth:
         - cookie
     cache_metadata:
