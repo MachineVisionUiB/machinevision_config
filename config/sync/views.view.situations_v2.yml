@@ -1974,7 +1974,7 @@ display:
         page_2: page_2
         default: '0'
         page_1: '0'
-      filename: sitiuations_long_v2
+      filename: sitiuations_long
       automatic_download: false
       export_method: batch
       export_batch_size: 100
@@ -2028,7 +2028,7 @@ display:
         page_1: page_1
         default: '0'
         page_2: '0'
-      filename: sitiuations_wide_v2
+      filename: sitiuations_wide
       automatic_download: false
       export_method: batch
       export_batch_size: 100
