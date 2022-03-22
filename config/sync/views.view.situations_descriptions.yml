@@ -1,15 +1,11 @@
-uuid: 119bc323-8d95-4435-a6d9-041fafe60649
+uuid: e6b3d6d7-5e90-4924-9590-b8fc60b69de3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_publication_type
     - field.storage.node.field_pullquote
     - field.storage.node.field_textfield
-    - field.storage.paragraph.field_character
-    - field.storage.paragraph.field_generic_entity_thing
-    - field.storage.paragraph.field_technology
-    - field.storage.paragraph.field_verbs
+    - node.type.machine_vision_situation
   module:
     - csv_serialization
     - node
@@ -18,10 +14,10 @@ dependencies:
     - text
     - user
     - views_data_export
-id: situations_v3
-label: 'MESSED UP Situations V3'
+id: situations_descriptions
+label: situations_descriptions
 module: views
-description: 'Situations provides a second layer of data embedded within a Creative Work.'
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -32,7 +28,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Situations V3'
+      title: situation_descriptions
       fields:
         nid:
           id: nid
@@ -81,7 +77,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: NA
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -143,11 +139,11 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: NA
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -206,7 +202,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -235,7 +231,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Pull Quotes'
+          label: SituationQuotes
           exclude: false
           alter:
             alter_text: false
@@ -287,7 +283,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ;
           field_api_classes: false
       pager:
         type: mini
@@ -326,36 +322,100 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        title:
+          id: title
           table: node_field_data
-          field: created
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          entity_field: title
+          plugin_id: standard
+          order: ASC
           expose:
             label: ''
-            field_identifier: created
+            field_identifier: ''
           exposed: false
-          granularity: second
-      arguments:
-        field_publication_type_target_id:
-          id: field_publication_type_target_id
-          table: node__field_publication_type
-          field: field_publication_type_target_id
-          plugin_id: numeric
-      filters: {  }
-      filter_groups:
-        operator: AND
-        groups: {  }
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            machine_vision_situation: machine_vision_situation
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       style:
         type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            title: title
+            field_textfield: field_textfield
+            nid: nid
+            field_pullquote: field_pullquote
+          default: '-1'
+          info:
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_textfield:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nid:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_pullquote:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -365,17 +425,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        result:
-          id: result
-          table: views
-          field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: result
-          empty: false
-          content: 'Displaying @start - @end of @total'
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -383,7 +433,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
@@ -392,11 +441,10 @@ display:
         - 'config:field.storage.node.field_textfield'
   data_export_1:
     id: data_export_1
-    display_title: 'Data export long'
+    display_title: 'Data export'
     display_plugin: data_export
     position: 1
     display_options:
-      title: 'Situations V3 long export'
       style:
         type: data_export
         options:
@@ -411,31 +459,20 @@ display:
             encoding: utf8
             utf8_bom: '0'
             use_serializer_encode_only: false
-      defaults:
-        title: false
-        fields: true
-      display_description: ''
       display_extenders: {  }
-      path: data/situations/Situations_descriptions_pullquotes
-      auth:
-        - cookie
-      displays:
-        default: '0'
-      filename: Situations_descriptions_pullquotes
+      path: data/situations/situation_description
+      filename: situation_description.csv
       automatic_download: false
-      export_method: batch
-      export_batch_size: 1000
       store_in_public_file_directory: false
       custom_redirect_path: false
-      redirect_to_display: page_2
-      include_query_params: true
+      redirect_to_display: none
+      include_query_params: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
-        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
