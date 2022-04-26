@@ -11,4 +11,8 @@ cd web || exit 1
 
 rsync -a -v ../../machinevision cloud-user@158.39.77.25:/home/cloud-user/
 
+# ls -l ../bin/static_db.sql || exit 1
+# ../vendor/bin/drush sql-drop --yes
+# sudo mysql mvisiond8 < ../bin/static_db.sql
+# ../vendor/bin/drush cr
 #../vendor/bin/drush tome:static -v --uri=https://machinevisionuib.github.io
