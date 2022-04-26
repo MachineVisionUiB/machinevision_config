@@ -27,3 +27,6 @@
 
 # Ignore services settings.
 web/sites/default/services.yml
+
+# Tome related files.
+bin/static_db.sql
