@@ -10,6 +10,7 @@ cd web || exit 1
 echo "Removes redirects"
 ../vendor/bin/drush scr ../bin/remove_redirects.php
 ../vendor/bin/drush pmu redirect --yes
+../vendor/bin/drush pmu dblog --yes
 ../vendor/bin/drush sql-dump --result-file=../bin/static_db.sql
 
 rsync -a -v ../../machinevision cloud-user@158.39.77.25:/home/cloud-user/
