@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_publication_type
     - node.type.work
     - taxonomy.vocabulary.creative_work_publication_type
+    - user.role.authenticated
   content:
     - 'taxonomy_term:creative_work_publication_type:02067f2d-a958-4d12-959d-26ccd63e4af0'
     - 'taxonomy_term:creative_work_publication_type:0a42628e-925e-48b1-a8e8-7ecb7916df7a'
@@ -329,9 +330,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -499,7 +501,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
   data_export_1:
@@ -547,7 +549,7 @@ display:
         - request_format
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
   data_export_2:
@@ -856,7 +858,7 @@ display:
         - request_format
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
   page_1:
@@ -876,7 +878,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
   page_2:
@@ -1157,7 +1159,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
   rest_export_1:
@@ -1448,6 +1450,6 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
