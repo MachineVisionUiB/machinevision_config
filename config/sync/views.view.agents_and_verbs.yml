@@ -9,6 +9,7 @@ dependencies:
     - field.storage.paragraph.field_technology
     - field.storage.paragraph.field_verbs
     - node.type.machine_vision_situation
+    - user.role.authenticated
   module:
     - csv_serialization
     - node
@@ -818,9 +819,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -1062,7 +1064,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
         - 'config:field.storage.paragraph.field_character'
@@ -1112,7 +1114,7 @@ display:
         - request_format
         - url
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
         - 'config:field.storage.paragraph.field_character'
@@ -1135,7 +1137,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_publication_type'
         - 'config:field.storage.paragraph.field_character'

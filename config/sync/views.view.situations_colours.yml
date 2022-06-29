@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_machine_p_o_v
     - field.storage.node.field_visual_characteristics
     - node.type.machine_vision_situation
+    - user.role.authenticated
   module:
     - csv_serialization
     - node
@@ -382,9 +383,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -503,7 +505,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_colours'
         - 'config:field.storage.node.field_machine_p_o_v'
@@ -562,7 +564,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_colours'
         - 'config:field.storage.node.field_machine_p_o_v'

@@ -9,6 +9,7 @@ dependencies:
     - field.storage.node.field_sexuality
     - field.storage.node.field_species
     - node.type.character
+    - user.role.authenticated
   module:
     - csv_serialization
     - node
@@ -818,9 +819,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -1021,7 +1023,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_age'
         - 'config:field.storage.node.field_gender'
@@ -1071,7 +1073,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_age'
         - 'config:field.storage.node.field_gender'
@@ -1884,7 +1886,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_age'
         - 'config:field.storage.node.field_gender'
@@ -1906,7 +1908,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_age'
         - 'config:field.storage.node.field_gender'
@@ -2691,7 +2693,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_age'
         - 'config:field.storage.node.field_gender'
@@ -3507,7 +3509,7 @@ display:
         - request_format
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_age'
         - 'config:field.storage.node.field_gender'

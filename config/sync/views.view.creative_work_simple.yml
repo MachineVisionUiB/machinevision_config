@@ -10,6 +10,7 @@ dependencies:
     - field.storage.node.field_url
     - field.storage.node.field_year
     - node.type.work
+    - user.role.authenticated
   module:
     - address
     - csv_serialization
@@ -629,9 +630,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -853,7 +855,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_author_name'
         - 'config:field.storage.node.field_country'
@@ -910,7 +912,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_author_name'
         - 'config:field.storage.node.field_country'
@@ -954,7 +956,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_author_name'
         - 'config:field.storage.node.field_country'
@@ -977,7 +979,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_author_name'
         - 'config:field.storage.node.field_country'
@@ -1019,7 +1021,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_author_name'
         - 'config:field.storage.node.field_country'

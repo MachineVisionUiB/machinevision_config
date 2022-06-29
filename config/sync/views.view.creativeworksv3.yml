@@ -14,6 +14,7 @@ dependencies:
     - field.storage.node.field_year
     - node.type.work
     - taxonomy.vocabulary.creative_work_publication_type
+    - user.role.authenticated
   content:
     - 'taxonomy_term:creative_work_publication_type:8bfaa6d9-607e-4628-92df-bc08840bd8c7'
     - 'taxonomy_term:creative_work_publication_type:bc0b9dfe-a08b-457e-9c28-3e3047259709'
@@ -1146,9 +1147,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -1432,7 +1434,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_characters'
         - 'config:field.storage.node.field_country'
@@ -2566,7 +2568,7 @@ display:
         - request_format
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_characters'
         - 'config:field.storage.node.field_country'
@@ -3759,7 +3761,7 @@ display:
         - request_format
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_characters'
         - 'config:field.storage.node.field_country'
@@ -3786,7 +3788,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_characters'
         - 'config:field.storage.node.field_country'
@@ -4951,7 +4953,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_characters'
         - 'config:field.storage.node.field_country'
@@ -5004,7 +5006,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_characters'
         - 'config:field.storage.node.field_country'

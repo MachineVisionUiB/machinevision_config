@@ -3,13 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_publication_type
     - field.storage.node.field_pullquote
     - field.storage.node.field_textfield
-    - field.storage.paragraph.field_character
-    - field.storage.paragraph.field_generic_entity_thing
-    - field.storage.paragraph.field_technology
-    - field.storage.paragraph.field_verbs
+    - user.role.authenticated
   module:
     - csv_serialization
     - node
@@ -318,9 +314,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -386,7 +383,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_pullquote'
         - 'config:field.storage.node.field_textfield'
@@ -437,7 +434,7 @@ display:
         - request_format
         - url
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_pullquote'
         - 'config:field.storage.node.field_textfield'

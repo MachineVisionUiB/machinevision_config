@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_first_name
     - field.storage.node.field_last_name
     - node.type.person
+    - user.role.authenticated
   module:
     - csv_serialization
     - node
@@ -297,9 +298,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -380,7 +382,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_last_name'
@@ -419,7 +421,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_last_name'
