@@ -8,8 +8,8 @@ dependencies:
     - image.style.article
     - media.type.image
   module:
-    - image
     - layout_builder
+    - svg_image
 third_party_settings:
   layout_builder:
     enabled: false
@@ -25,6 +25,12 @@ content:
     settings:
       image_link: file
       image_style: article
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
     third_party_settings: {  }
     weight: 0
     region: content
@@ -34,3 +40,4 @@ hidden:
   search_api_excerpt: true
   thumbnail: true
   uid: true
+  uuid: true
