@@ -52,7 +52,7 @@
         "drupal/tome": "^1.5",
         "drupal/uuid_extra": "^2.0",
         "drupal/views_data_export": "^1.0",
-        "drush/drush": "^10.2",
+        "drush/drush": "^11.0",
         "machinevisionuib/machine-vision-theme": "dev-main",
         "machinevisionuib/machinevision_setup": "dev-main",
         "smbjorklund/elmcip_person": "^1.0"
@@ -69,7 +69,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.4"
+            "php": "8.0"
         },
         "allow-plugins": {
             "composer/installers": true,
